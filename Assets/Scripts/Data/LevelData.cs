@@ -8,6 +8,9 @@ public class LevelData : MonoBehaviour
     [SerializeField] private int _waveOfEnemies;
     [SerializeField] private Transform _meteoriteConteiner;
     [SerializeField] private Transform _projectileConteiner;
+    [SerializeField] private Transform _enemiesConteiner;
+    [SerializeField] private List<Transform> _positionForEnemies;
+
     private void Awake()
     {
         instance = this;
@@ -17,6 +20,10 @@ public class LevelData : MonoBehaviour
         get { return _waveOfEnemies; }
         set { _waveOfEnemies = value; }
     }
+    public List<Transform> PositionForEnemies
+    {
+        get { return _positionForEnemies; }
+    }
     public Transform MeteoriteConteiner
     {
         get { return _meteoriteConteiner; }
@@ -24,5 +31,9 @@ public class LevelData : MonoBehaviour
     public Transform ProjectileConteiner
     {
         get { return _projectileConteiner; }
+    }
+    public Transform EnemiesConteiner
+    {
+        get { return _enemiesConteiner; }
     }
 }

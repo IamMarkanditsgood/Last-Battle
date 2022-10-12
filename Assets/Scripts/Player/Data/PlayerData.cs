@@ -14,8 +14,8 @@ public class PlayerData : MonoBehaviour
     {
         instance = this;
     }
-    public List<GameObject> ListOfGans { get { return _guns; } set { _guns = value; }}
-    public List<GameObject> ListOfAbilities { get { return _abilities; } set { _abilities = value; } }
+    public List<GameObject> ListOfGans { get { return _guns; }}
+    public List<GameObject> ListOfAbilities { get { return _abilities; }}
     public float PlayerSpeed{ get { return _playerSpeed; } set { _playerSpeed = value; }}
     public float Health{ get { return _health; } set { _health = value; }}
     public float Shield { get { return _shield; } set { _shield = value; } }

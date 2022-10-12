@@ -20,7 +20,7 @@ public class SpawnOfProjectiles : AFirstSpawn
         GameObject sphere = Instantiate(bullet);
         sphere.SetActive(false);
         sphere.transform.SetParent(LevelData.instance.ProjectileConteiner);
-        ammunitionStore.PooledStandardBullets = sphere;
+        ammunitionStore.PoolStandardBullets = sphere;
     }
 
 }

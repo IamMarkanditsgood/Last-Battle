@@ -13,7 +13,7 @@ public class InputMouse : MonoBehaviour
                 if(PlayerData.instance.ListOfGans[i].activeInHierarchy)
                 {
                     GameObject obj = PlayerData.instance.ListOfGans[i];
-                    ShootFromGun shooting = obj.GetComponent<ShootFromGun>();
+                    IStandardShot shooting = obj.GetComponent<IStandardShot>();
                     shooting.Shoot();
                 }
             }

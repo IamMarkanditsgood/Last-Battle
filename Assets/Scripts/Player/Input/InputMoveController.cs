@@ -16,10 +16,12 @@ public class InputMoveController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             MovePlayer movePlayer = GetComponent<MovePlayer>();
             movePlayer.Movement(_movementVector);
         }
+        
     }
 }

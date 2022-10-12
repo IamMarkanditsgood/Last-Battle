@@ -9,6 +9,7 @@ public class StartSetings : MonoBehaviour
     [SerializeField] private float _zLevelSize;
     [SerializeField] private int _numberOfMeteorites;
     [SerializeField] private int _numberOfProjectiles;
+    
     private void Awake()
     {
         instance = this;
