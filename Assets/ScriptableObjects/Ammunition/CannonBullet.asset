@@ -19,3 +19,4 @@ MonoBehaviour:
   _speed: 10
   _lifeTime: 2
   _size: {x: 0.5, y: 0.5, z: 0.5}
+  _particles: {fileID: 947250871755532473, guid: 473d079eb020ad24184a63656bf54144, type: 3}

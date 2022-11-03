@@ -8,7 +8,8 @@ public class DataOfGun : MonoBehaviour
     [SerializeField] private Transform _positionsForShooting;
     [SerializeField] private AmmunitionData _scriptableObject;
     [SerializeField] private float _damageIndex;
-    [SerializeField] private float _speedIndex;
+    [SerializeField] private float _timeRechargeIndex;
+    [SerializeField] private float _recharge;
 
 
     public float DamageIndex
@@ -16,10 +17,15 @@ public class DataOfGun : MonoBehaviour
         get { return _damageIndex; }
         set { _damageIndex = value; }
     }
-    public float SpeedIndex
+    public float TimeRechargeIndex
     {
-        get { return _speedIndex; }
-        set { _speedIndex = value; }
+        get { return _timeRechargeIndex; }
+        set { _timeRechargeIndex = value; }
+    }
+    public float ReCharge
+    {
+        get { return _recharge; }
+        set { _recharge = value; }
     }
     public ETypeOfGun TypeOfGun
     {

@@ -11,6 +11,7 @@ public class TouchingObjects : MonoBehaviour
             ControllerOfHealthe controllerOfHealthe =  collision.gameObject.GetComponent<ControllerOfHealthe>();
             float damage = gameObject.GetComponent<DataOfProjectile>().ScriptableObjects.Damage * gameObject.GetComponent<DataOfProjectile>().DamageIndex;
             controllerOfHealthe.TakeDamage(damage);
+            gameObject.SetActive(false);
         }
     }
 }

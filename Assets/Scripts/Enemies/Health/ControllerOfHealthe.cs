@@ -4,10 +4,23 @@ using UnityEngine;
 
 public class ControllerOfHealthe : MonoBehaviour
 {
-
+    [SerializeField] private GameObject _particlesForDeath;
+    DataOfEnemies _dataOfEnemies;
+    private void Start()
+    {
+        _dataOfEnemies = GetComponent<DataOfEnemies>();
+    }
+    private void Update()
+    {
+        if(_dataOfEnemies.Healthe <= 0)
+        {
+            Instantiate(_particlesForDeath);
+            Destroy(gameObject);
+        }
+    }
     public void TakeDamage(float damage)
     {
-        DataOfEnemies _dataOfEnemies = GetComponent<DataOfEnemies>();
+        
         if (_dataOfEnemies.Shield <= 0)
         {
             _dataOfEnemies.Healthe -= damage;

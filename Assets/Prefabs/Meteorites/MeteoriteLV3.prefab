@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1673243193610934307}
   - component: {fileID: -6805878908214260033}
   - component: {fileID: -5098045949544306655}
+  - component: {fileID: -5883398308980758405}
   m_Layer: 0
   m_Name: MeteoriteLV3
   m_TagString: Untagged
@@ -154,3 +155,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932dd3352d8eea447a14a394a3c04b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!208 &-5883398308980758405
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7447658891299735540}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.90500003, y: 0.86600006, z: 0.85200006}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0.028, y: -0.056, z: 0.033}
+  m_TimeToStationary: 0.5

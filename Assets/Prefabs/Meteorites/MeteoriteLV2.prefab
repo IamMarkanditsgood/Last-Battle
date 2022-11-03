@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 830242163093996541}
   - component: {fileID: 9085673399684939108}
   - component: {fileID: -6418141880523004468}
+  - component: {fileID: -1383472771089201684}
   m_Layer: 0
   m_Name: MeteoriteLV2
   m_TagString: Untagged
@@ -154,3 +155,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932dd3352d8eea447a14a394a3c04b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!208 &-1383472771089201684
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635769653292126251}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.3360001, y: 1.3520001, z: 1.4210001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0.23300001, y: -0.128, z: -0.053000003}
+  m_TimeToStationary: 0.5

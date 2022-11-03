@@ -13,7 +13,9 @@ public class AmmunitionData : ScriptableObject
     [SerializeField] private float _speed;
     [SerializeField] private float _lifeTime;
     [SerializeField] private Vector3 _size;
+    [SerializeField] private GameObject _particles;
 
+    public GameObject Particles => _particles;
     public string Name => _name;
     public Material Material => _material;
     public Mesh Mesh => _mesh;

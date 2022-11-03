@@ -9,8 +9,10 @@ public class LifeTimer : MonoBehaviour
 
     private void OnEnable()
     {
+       
         if (GetComponent<DataOfProjectile>().ScriptableObjects != null)
         {
+            
             float _timeLife = GetComponent<DataOfProjectile>().ScriptableObjects.LifeTime;
             _coroutine = StartCoroutine(WaitDeath(_timeLife));
         }
@@ -18,7 +20,11 @@ public class LifeTimer : MonoBehaviour
 
     private void OnDisable()
     {
-        StopCoroutine(_coroutine);
+        if(_coroutine != null)
+        {
+            StopCoroutine(_coroutine);
+        }
+        
     }
 
     private IEnumerator WaitDeath(float timeLife)

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    public float Speed = 0.3f;
     private Rigidbody _rb;
     void Start()
     {
