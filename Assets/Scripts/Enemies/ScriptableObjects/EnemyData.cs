@@ -10,20 +10,8 @@ public class EnemyData : ScriptableObject
     [SerializeField] private float _health;
     [SerializeField] private float _shield;
 
-    public ERacesOfShips RaceOfShip
-    {
-        get { return _raceOfShip; }
-    }
-    public EEnemiesType TypeOfShip
-    {
-        get { return _typeOfEnemy; }
-    }
-    public float Health
-    {
-        get { return _health; }
-    }
-    public float Shield
-    {
-        get { return _shield; }
-    }
+    public ERacesOfShips RaceOfShip => _raceOfShip;
+    public EEnemiesType TypeOfShip => _typeOfEnemy;
+    public float Health => _health;
+    public float Shield => _shield;
 }

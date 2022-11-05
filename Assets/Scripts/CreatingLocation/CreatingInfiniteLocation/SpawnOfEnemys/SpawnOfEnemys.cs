@@ -63,7 +63,7 @@ public class SpawnOfEnemys : AFirstSpawn
             case (EEnemiesType)5:
                 return _numberOfBoss2InPool;
             default:
-                print("Error: You still have not create case for this type in class SpawnOfEnemys!!!");
+                Debug.Log("Error: You still have not create case for this type in class SpawnOfEnemys!!!");
                 return 0;
         }
     }

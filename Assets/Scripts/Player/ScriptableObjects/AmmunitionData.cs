@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New AmmunitionData", menuName = "Ammunition Data", order = 52)]
+[CreateAssetMenu(fileName = "New AmmunitionScriptableObject", menuName = "Ammunition ScriptableObject", order = 51)]
 public class AmmunitionData : ScriptableObject
 {
-    
     [SerializeField] private string _name;
     [SerializeField] private Material _material;
     [SerializeField] private Mesh _mesh;
