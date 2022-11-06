@@ -30,6 +30,8 @@ public class LifeTimer : MonoBehaviour
     private IEnumerator WaitDeath(float timeLife)
     {
         yield return new WaitForSeconds(timeLife);
+        CleanPrefab cleanPrefab = new CleanPrefab();
+        cleanPrefab.DeleteParticle(GetComponent<DataOfProjectile>());
         gameObject.SetActive(false);
     }
 

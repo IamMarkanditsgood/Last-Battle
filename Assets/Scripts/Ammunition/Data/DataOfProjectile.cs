@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DataOfProjectile : MonoBehaviour
-{ 
+{
     [SerializeField] private AmmunitionData scriptableObjects;
+    private GameObject _currentParticles;
     private float _damageIndex = 2;
     private float _speedIndex = 1;
     public float DamageIndex
@@ -14,12 +15,17 @@ public class DataOfProjectile : MonoBehaviour
     }
     public float speedIndex
     {
-        get { return _speedIndex; } 
+        get { return _speedIndex; }
         set { _speedIndex = value; }
     }
     public AmmunitionData ScriptableObjects
     {
         get { return scriptableObjects; }
         set { scriptableObjects = value; }
+    }
+    public GameObject CurrentParticles
+    {
+        get { return _currentParticles; }
+        set { _currentParticles = value;  }
     }
 }

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1a2627d0d812347af4c6da083c4efc, type: 3}
   m_Name: BasicRocket
   m_EditorClassIdentifier: 
-  _name: 
-  _material: {fileID: 0}
-  _mesh: {fileID: 0}
-  _damage: 0
-  _speed: 0
-  _lifeTime: 0
-  _size: {x: 0, y: 0, z: 0}
-  _particles: {fileID: 0}
+  _name: BasicRocket
+  _material: {fileID: 2100000, guid: e494807fe98891c4dba63bd86cc64aea, type: 2}
+  _mesh: {fileID: 4300000, guid: 91a12132339e19346a35e07960f4ef02, type: 3}
+  _damage: 10
+  _speed: 20
+  _lifeTime: 10
+  _size: {x: 2, y: 2, z: 2}
+  _particles: {fileID: 7338916534628047903, guid: 1c3d6fa22c947eb40858d1023c577a4b, type: 3}

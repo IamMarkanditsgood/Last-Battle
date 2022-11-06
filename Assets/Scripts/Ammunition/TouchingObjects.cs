@@ -8,10 +8,14 @@ public class TouchingObjects : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
+            CleanPrefab cleanPrefab = new CleanPrefab();
+            DataOfProjectile dataOfProjectile = GetComponent<DataOfProjectile>();
             ControllerOfHealthe controllerOfHealthe =  collision.gameObject.GetComponent<ControllerOfHealthe>();
-            float damage = gameObject.GetComponent<DataOfProjectile>().ScriptableObjects.Damage * gameObject.GetComponent<DataOfProjectile>().DamageIndex;
+            float damage = gameObject.GetComponent<DataOfProjectile>().ScriptableObjects.Damage * dataOfProjectile.DamageIndex;
             controllerOfHealthe.TakeDamage(damage);
+            cleanPrefab.DeleteParticle(dataOfProjectile);
             gameObject.SetActive(false);
+            
         }
     }
 }
