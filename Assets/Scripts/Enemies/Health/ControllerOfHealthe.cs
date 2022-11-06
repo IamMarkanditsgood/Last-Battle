@@ -5,7 +5,7 @@ using UnityEngine;
 public class ControllerOfHealthe : MonoBehaviour
 {
     [SerializeField] private GameObject _particlesForDeath;
-    DataOfEnemies _dataOfEnemies;
+    private DataOfEnemies _dataOfEnemies;
     private void Start()
     {
         _dataOfEnemies = GetComponent<DataOfEnemies>();
@@ -14,7 +14,7 @@ public class ControllerOfHealthe : MonoBehaviour
     {
         if(_dataOfEnemies.Healthe <= 0)
         {
-            Instantiate(_particlesForDeath);
+            Instantiate(_particlesForDeath, gameObject.transform);
             Destroy(gameObject);
         }
     }

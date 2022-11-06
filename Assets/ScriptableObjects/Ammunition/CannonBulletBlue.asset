@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1a2627d0d812347af4c6da083c4efc, type: 3}
   m_Name: CannonBulletBlue
   m_EditorClassIdentifier: 
-  _name: InertialCanon
   _material: {fileID: 2100000, guid: 19fe70c4986ba0a4a875f9ddb24e565f, type: 2}
   _mesh: {fileID: 4300000, guid: ff419cf9e460bab428084b82c5ac3d92, type: 3}
   _damage: 10
-  _speed: 10
+  _speed: 20
   _lifeTime: 2
   _size: {x: 1, y: 1, z: 1}
   _particles: {fileID: 0}
