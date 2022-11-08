@@ -15,7 +15,7 @@ MonoBehaviour:
   _material: {fileID: 0}
   _mesh: {fileID: 0}
   _damage: 10
-  _speed: 10
+  _speed: 20
   _lifeTime: 10
   _size: {x: 1, y: 1, z: 1}
   _particles: {fileID: 2787211773562640105, guid: 538bade9b649a0b44a7af567342257ba, type: 3}

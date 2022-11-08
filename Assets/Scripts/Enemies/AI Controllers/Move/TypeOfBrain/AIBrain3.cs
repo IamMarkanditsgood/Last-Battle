@@ -18,8 +18,8 @@ public class AIBrain3 : MonoBehaviour, IAITypesOfBrain
         }
         else if (distanceToPlayer <= _distanceForStop && distanceToPlayer <= _distanceForRanBack)
         {
-            
-            return AIFindOutTarget(player);
+            return gameObject.transform.position;
+            //return AIFindOutTarget(player);
         }
         else
         {

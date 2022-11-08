@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a1a2627d0d812347af4c6da083c4efc, type: 3}
-  m_Name: AlianAimRocket
+  m_Name: QuantumBall
   m_EditorClassIdentifier: 
   _material: {fileID: 0}
   _mesh: {fileID: 0}
   _damage: 10
-  _speed: 20
+  _speed: 15
   _lifeTime: 10
-  _size: {x: 0.1, y: 0.1, z: 0.1}
-  _particles: {fileID: 7442183130224065834, guid: 71e0a0bf92536d247880585dbedfbb8e, type: 3}
+  _size: {x: 1, y: 1, z: 1}
+  _particles: {fileID: 2696107712892561882, guid: e496f76e0beace94db9883c971e44c64, type: 3}

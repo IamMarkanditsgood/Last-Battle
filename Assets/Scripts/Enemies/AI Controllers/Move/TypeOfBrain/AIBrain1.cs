@@ -38,8 +38,8 @@ public class AIBrain1 : MonoBehaviour, IAITypesOfBrain
     }
     private Vector3 AIFindOutTarget(GameObject player)
     {
-        float randomX = Random.Range(player.transform.position.x - 10f, player.transform.position.x + 10f);
-        float randomZ = Random.Range(player.transform.position.z - 10f, player.transform.position.z + 10f);
+        float randomX = Random.Range(player.transform.position.x - 50f, player.transform.position.x + 50);
+        float randomZ = Random.Range(player.transform.position.z - 50, player.transform.position.z + 50);
         Vector3 target = new Vector3(randomX, 0f, randomZ);
         //Instantiate(_targetObject, target, Quaternion.identity);
         return target;

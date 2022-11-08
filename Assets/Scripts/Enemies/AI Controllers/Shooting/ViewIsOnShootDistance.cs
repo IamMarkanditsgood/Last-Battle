@@ -24,7 +24,7 @@ public class ViewIsOnShootDistance : MonoBehaviour
     { 
         RaycastHit hit;
         bool canShoot = Recharge();
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 10, _layerOfEnemy.value) && canShoot)
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 50, _layerOfEnemy.value) && canShoot)
         {
             for(int i = 0; i < listOfGuns.Count; i++ )
             {
