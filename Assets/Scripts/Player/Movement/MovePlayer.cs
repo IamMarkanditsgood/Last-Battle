@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using ShipData;
 
-public class MovePlayer : MonoBehaviour
+namespace MoveMethods
 {
-    private Rigidbody _rb;
-    void Start()
+    public class MovePlayer
     {
-        _rb = GetComponent<Rigidbody>();
-        _rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
-    }
-    public void Movement(Vector3 _movementVector)
-    {
-        PlayerData playerData = GetComponent<PlayerData>();
-        _rb.AddForce(_movementVector * playerData.PlayerSpeed, ForceMode.Impulse);
+        private Rigidbody rb;
+        public void Movement(Vector3 movementVector, PlayerData playerData, GameObject playerShip)
+        {
+            rb = playerData.Rigidbody;
+            rb.AddForce(movementVector * playerData.PlayerSpeed, ForceMode.Impulse);
+        }
     }
 }

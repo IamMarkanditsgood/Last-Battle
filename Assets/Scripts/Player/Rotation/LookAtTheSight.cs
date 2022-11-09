@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using ShipData;
 
-public class LookAtTheSight : MonoBehaviour
+namespace LookAtMethods
 {
-    [SerializeField] private Transform _cursor;
-    private void FixedUpdate()
+    public class LookAtTheSight
     {
-        transform.LookAt(_cursor, Vector3.up);
+        public void LookAtCursor(PlayerData playerData, GameObject playerShip)
+        {
+            playerShip.transform.LookAt(playerData.Cursor.transform, Vector3.up);
+        }
     }
 }
