@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1a2627d0d812347af4c6da083c4efc, type: 3}
   m_Name: CannonBulletRed
   m_EditorClassIdentifier: 
-  _name: InertialCanon
+  _typeOfProjectile: 1
   _material: {fileID: 2100000, guid: 62ae78ff12a4cf3498d4e267ceab96d0, type: 2}
   _mesh: {fileID: 4300000, guid: ff419cf9e460bab428084b82c5ac3d92, type: 3}
   _damage: 10

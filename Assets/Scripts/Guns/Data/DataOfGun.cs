@@ -6,7 +6,7 @@ public class DataOfGun : MonoBehaviour
 {
     [SerializeField] private ETypeOfGun _typeOfGun;
     [SerializeField] private Transform _positionsForShooting;
-    [SerializeField] private AmmunitionData _scriptableObject;
+    [SerializeField] private AmmunitionData _bullet;
     [SerializeField] private float _damageIndex;
     [SerializeField] private float _timeRechargeIndex;
     [SerializeField] private float _recharge;
@@ -35,8 +35,8 @@ public class DataOfGun : MonoBehaviour
     {
         get { return _positionsForShooting; }
     }
-    public AmmunitionData ScriptableObject
+    public AmmunitionData Bullet
     {
-        get { return _scriptableObject; }
+        get { return _bullet; }
     }
 }

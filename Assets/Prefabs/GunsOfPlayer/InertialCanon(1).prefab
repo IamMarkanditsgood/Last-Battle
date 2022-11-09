@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeOfGun: 0
   _positionsForShooting: {fileID: 1797081261032327150}
-  _scriptableObject: {fileID: 11400000, guid: fe4f7c171d6db204dace5bb39767fb4a, type: 2}
+  _bullet: {fileID: 11400000, guid: fe4f7c171d6db204dace5bb39767fb4a, type: 2}
   _damageIndex: 1
   _timeRechargeIndex: 0
   _recharge: 2

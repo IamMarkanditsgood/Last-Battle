@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveOfBullet : MonoBehaviour
+public class MoveOfBullet : IProjectileMover
 {
-    private void FixedUpdate()
+    public void MoveProjectile(GameObject projectile)
     {
-        ProjectileController();
-    }
-    public void ProjectileController()
-    {
-        DataOfProjectile dataOfProjectile = GetComponent<DataOfProjectile>();
-        transform.Translate(Vector3.forward * dataOfProjectile.ScriptableObjects.Speed * Time.deltaTime);
+        
+        DataOfProjectile dataOfProjectile = projectile.GetComponent<DataOfProjectile>();
+        float speed = dataOfProjectile.ScriptableObjects.Speed;
+        projectile.transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }

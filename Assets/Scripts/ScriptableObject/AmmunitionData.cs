@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New AmmunitionScriptableObject", menuName = "Ammunition ScriptableObject", order = 51)]
 public class AmmunitionData : ScriptableObject
 {
+    [SerializeField] private ETypeOfProjectile _typeOfProjectile;
     [SerializeField] private Material _material;
     [SerializeField] private Mesh _mesh;
     [SerializeField] private float _damage;
@@ -13,6 +14,7 @@ public class AmmunitionData : ScriptableObject
     [SerializeField] private Vector3 _size;
     [SerializeField] private GameObject _particles;
 
+    public ETypeOfProjectile TypeOfProjectile => _typeOfProjectile;
     public GameObject Particles => _particles;
     public Material Material => _material;
     public Mesh Mesh => _mesh;

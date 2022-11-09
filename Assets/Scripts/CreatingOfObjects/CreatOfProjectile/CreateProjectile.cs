@@ -1,43 +1,46 @@
 using UnityEngine;
 
-public class CreateProjectile : MonoBehaviour
+namespace CreatingAnObjects
 {
-    private DataOfProjectile _dataOfProjectile;
-    public void CreateNewFeatures(float damageIndex)
+    public class CreateProjectile
     {
-        _dataOfProjectile = gameObject.GetComponent<DataOfProjectile>();
-        _dataOfProjectile.DamageIndex = damageIndex;
+        private DataOfProjectile _dataOfProjectile;
+        public void CreateNewFeatures(float damageIndex, GameObject bullet)
+        {
+            _dataOfProjectile = bullet.GetComponent<DataOfProjectile>();
+            _dataOfProjectile.DamageIndex = damageIndex;
 
-        if (_dataOfProjectile.ScriptableObjects.Mesh != null)
-        {
-            AddMesh();
+            if (_dataOfProjectile.ScriptableObjects.Mesh != null)
+            {
+                AddMesh(bullet);
+            }
+            if (_dataOfProjectile.ScriptableObjects.Material != null)
+            {
+                AddMaterial(bullet);
+            }
+
+            if (_dataOfProjectile.ScriptableObjects.Particles != null)
+            {
+                AddParticle(bullet);
+            }
+            bullet.transform.localScale = _dataOfProjectile.ScriptableObjects.Size;
+            //gameObject.tag = _dataOfProjectile.ScriptableObjects.Name;
         }
-        if (_dataOfProjectile.ScriptableObjects.Material != null)
+        private void AddMesh(GameObject bullet)
         {
-            AddMaterial();
+            MeshFilter mesh = bullet.GetComponent<MeshFilter>();
+            mesh.mesh = _dataOfProjectile.ScriptableObjects.Mesh;
         }
-        
-        if (_dataOfProjectile.ScriptableObjects.Particles != null)
+        private void AddMaterial(GameObject bullet)
         {
-            AddParticle();
+            MeshRenderer meshRenderer = bullet.GetComponent<MeshRenderer>();
+            meshRenderer.sharedMaterial = _dataOfProjectile.ScriptableObjects.Material;
         }
-        gameObject.transform.localScale = _dataOfProjectile.ScriptableObjects.Size;
-        //gameObject.tag = _dataOfProjectile.ScriptableObjects.Name;
-    }
-    private void AddMesh()
-    {
-        MeshFilter mesh = GetComponent<MeshFilter>();
-        mesh.mesh = _dataOfProjectile.ScriptableObjects.Mesh;
-    }
-    private void AddMaterial()
-    {
-        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
-        meshRenderer.sharedMaterial = _dataOfProjectile.ScriptableObjects.Material;
-    }
-    private void AddParticle()
-    {
-        GameObject particles = Instantiate(_dataOfProjectile.ScriptableObjects.Particles, transform.position, transform.rotation);
-        particles.transform.SetParent(gameObject.transform);
-        _dataOfProjectile.CurrentParticles = particles;
+        private void AddParticle(GameObject bullet)
+        {
+            GameObject particles = Object.Instantiate(_dataOfProjectile.ScriptableObjects.Particles, bullet.transform.position, bullet.transform.rotation);
+            particles.transform.SetParent(bullet.transform);
+            _dataOfProjectile.CurrentParticles = particles;
+        }
     }
 }

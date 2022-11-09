@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CreatingAnObjects;
 
 public class ShootFromGun : MonoBehaviour, IStandardShot
 {
@@ -17,9 +18,10 @@ public class ShootFromGun : MonoBehaviour, IStandardShot
         {
             bullet.transform.position = dataOfGun.PositionForSooting.position;
             bullet.transform.rotation = gameObject.transform.rotation;
-            bullet.GetComponent<DataOfProjectile>().ScriptableObjects = dataOfGun.ScriptableObject;
+            bullet.GetComponent<DataOfProjectile>().ScriptableObjects = dataOfGun.Bullet;
             bullet.SetActive(true);
-            bullet.GetComponent<CreateProjectile>().CreateNewFeatures(gameObject.GetComponent<DataOfGun>().DamageIndex);
+            CreateProjectile createProjectile = new CreateProjectile();
+            createProjectile.CreateNewFeatures(dataOfGun.DamageIndex, bullet);
         }
     }
     private GameObject GetObject()

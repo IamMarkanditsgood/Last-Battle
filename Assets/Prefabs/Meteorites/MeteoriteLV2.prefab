@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9085673399684939108}
   - component: {fileID: -6418141880523004468}
   - component: {fileID: -1383472771089201684}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MeteoriteLV2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
