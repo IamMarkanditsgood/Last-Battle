@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookAtPlayer : MonoBehaviour
+public class LookAtPlayer
 {
-    [SerializeField] private Transform player;
-
-    void Update()
+    public void RotateOnPlayer(GameObject enemyShip, GameObject player)
     {
-        transform.LookAt(player.position);
+        enemyShip.transform.LookAt(player.transform.position);
     }
 }

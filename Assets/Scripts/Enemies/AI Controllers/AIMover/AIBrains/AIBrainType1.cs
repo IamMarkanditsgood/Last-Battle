@@ -2,39 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
-public class AIBrain1 : MonoBehaviour, IAITypesOfBrain
+public class AIBrainType1 : IAITypesOfBrain
 {
-   //[SerializeField] private GameObject _targetObject;
-    private AIController _controller;
-    private NavMeshAgent _agent;
-    private Vector3 target;
-
-
-    private void Start()
+    public Vector3 AITakeTarget(ref bool isOnTarget, ref NavMeshAgent agent, GameObject thisShip, GameObject player, float distanceToPlayer)
     {
-        _controller = gameObject.GetComponent<AIController>();
-        _agent = GetComponent<NavMeshAgent>();
-    }
-    public Vector3 AITakeTarget(GameObject player)
-    {
-        float distanceToPlayer = Vector3.Distance(player.transform.position, gameObject.transform.position);
-        
-        if (distanceToPlayer < 10 && _controller.IsOnTarget == true)
+        Vector3 target;
+        if (distanceToPlayer < 10 && isOnTarget == true)
         {
-            _agent.ResetPath();
+            agent.ResetPath();
             target = AIFindOutTarget(player);
-            _controller.IsOnTarget = false;
+            isOnTarget = false;
             return target;
 
         }
         else if (distanceToPlayer > 10)
         {
             target = player.transform.position;
-            _controller.IsOnTarget = true;
+            isOnTarget = true;
             return target;
         }
-        return target;
+        return player.transform.position;
     }
     private Vector3 AIFindOutTarget(GameObject player)
     {
@@ -44,6 +31,4 @@ public class AIBrain1 : MonoBehaviour, IAITypesOfBrain
         //Instantiate(_targetObject, target, Quaternion.identity);
         return target;
     }
-
-    
 }

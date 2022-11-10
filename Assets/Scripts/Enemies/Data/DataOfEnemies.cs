@@ -4,54 +4,61 @@ using UnityEngine;
 
 public class DataOfEnemies : MonoBehaviour, IGanListOfShip
 {
+    [SerializeField] private ETypeOfAIBrain _typeOfAIbrain;
+    [SerializeField] private GameObject _player;
+    
     [SerializeField] private List<GameObject> _listOfGun;
     [SerializeField] private EnemyData _scriptableObject;
+    [SerializeField] private float _distanceForShooting;
     [SerializeField] private float _healthe;
     [SerializeField] private float _shield;
-    [SerializeField] private float _reChargeTime;
+    [SerializeField] private float _healtheIndex;
+    [SerializeField] private float _shieldIndex;
+    [SerializeField] private LayerMask _layerMaskOfEnemy;
 
-    private void Start()
-    {
-        _healthe = _scriptableObject.Health;
-        _shield = _scriptableObject.Shield;
-        
-    }
     private void OnEnable()
     {
-        InstallReChangeTime();
+        _healthe = _scriptableObject.Health * _healtheIndex;
+        _shield = _scriptableObject.Shield * _shieldIndex;
     }
-    private void InstallReChangeTime()
+    public ETypeOfAIBrain TypeOfAIBrain
     {
-       
-        for (int i = 0; i < _listOfGun.Count; i++)
-        {
-            if (_listOfGun[i].activeInHierarchy)
-            {
-                DataOfGun dataOfGun = _listOfGun[i].GetComponent<DataOfGun>();
-                _reChargeTime = dataOfGun.ReCharge;
-            }
-        }
+        get { return _typeOfAIbrain; }
     }
+    public LayerMask LayerMaskOfEnemy
+    {
+        get { return _layerMaskOfEnemy; }
+    }
+    public GameObject Player { get { return _player; } }
     public List<GameObject> TakeListOfGuns()
     {
         return _listOfGun;
     }
-    public float RechargeTime
+    public float DistanceForShooting
     {
-        get { return _reChargeTime; }
-        set { _reChargeTime = value; }
+        get { return _distanceForShooting; }
+        set { _distanceForShooting = value; }
     }
     public float Healthe
     {
         get { return _healthe; }
         set { _healthe = value; }
     }
+    public float HealtheIndex
+    {
+        get { return _healtheIndex; }
+        set { _healtheIndex = value; }
+    }
     public float Shield
     {
         get { return _shield; }
         set { _shield = value; }
     }
-
+    public float ShieldIndex
+    {
+        get { return _shieldIndex; }
+        set { _shieldIndex = value; }
+    }
     public List<GameObject> GunList
     {
         get { return _listOfGun; }

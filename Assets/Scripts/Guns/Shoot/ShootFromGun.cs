@@ -3,25 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using CreatingAnObjects;
 
-public class ShootFromGun : MonoBehaviour, IStandardShot
+public class ShootFromGun : MonoBehaviour, IStandardShoot
 {
-    DataOfGun dataOfGun;
+    private DataOfGun dataOfGun;
+    private Coroutine _coroutine;
     private void Awake()
     {
         dataOfGun = GetComponent<DataOfGun>();
     }
     public void Shoot()
-    { 
-        
-        GameObject bullet = GetObject();
-        if (bullet != null)
+    {
+        if (dataOfGun.IsCharged)
         {
-            bullet.transform.position = dataOfGun.PositionForSooting.position;
-            bullet.transform.rotation = gameObject.transform.rotation;
-            bullet.GetComponent<DataOfProjectile>().ScriptableObjects = dataOfGun.Bullet;
-            bullet.SetActive(true);
-            CreateProjectile createProjectile = new CreateProjectile();
-            createProjectile.CreateNewFeatures(dataOfGun.DamageIndex, bullet);
+            GameObject bullet = GetObject();
+            if (bullet != null)
+            {
+                bullet.transform.position = dataOfGun.PositionForSooting.position;
+                bullet.transform.rotation = gameObject.transform.rotation;
+                bullet.GetComponent<DataOfProjectile>().ScriptableObjects = dataOfGun.Bullet;
+                bullet.SetActive(true);
+                CreateProjectile createProjectile = new CreateProjectile();
+                createProjectile.CreateNewFeatures(dataOfGun.DamageIndex, bullet);
+                dataOfGun.IsCharged = false;
+                _coroutine = StartCoroutine(WaitDeath(dataOfGun.ReCharge));
+            }
         }
     }
     private GameObject GetObject()
@@ -30,6 +35,28 @@ public class ShootFromGun : MonoBehaviour, IStandardShot
         GameObject bullet = ammunitionStore.PoolStandardBullets;
         return bullet;
     }
+    private void OnDisable()
+    {
+        if (_coroutine != null)
+        {
+            StopCoroutine(_coroutine);
+        }
 
-   
+    }
+    private void OnDestroy()
+    {
+        if (_coroutine != null)
+        {
+            StopCoroutine(_coroutine);
+        }
+    }
+    public IEnumerator WaitDeath(float rechargeTime)
+    {
+        
+        yield return new WaitForSeconds(rechargeTime);
+        dataOfGun.IsCharged = true;
+        StopCoroutine(_coroutine);
+    }
+
+
 }

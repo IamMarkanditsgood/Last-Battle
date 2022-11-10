@@ -2,51 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ViewIsOnShootDistance : MonoBehaviour
+public class ViewIsOnShootDistance
 {
-    [SerializeField] private GameObject _objectWithGunsList;
-    [SerializeField] private LayerMask _layerOfEnemy;
-    private IGanListOfShip DataWithGuns;
-    private List<GameObject> listOfGuns;
-    private float _finishTime;
-    private float _time;
-    private void Start()
+    public void IsOnShootDistance(LayerMask enemyLayer, GameObject thisShip)
     {
-        DataWithGuns = _objectWithGunsList.GetComponent<IGanListOfShip>();
-        listOfGuns = DataWithGuns.TakeListOfGuns();
-        _finishTime = gameObject.GetComponent<DataOfEnemies>().RechargeTime;
-    }
-    private void OnEnable()
-    {
-        _finishTime = gameObject.GetComponent<DataOfEnemies>().RechargeTime;
-    }
-    void FixedUpdate()
-    { 
+        DataOfEnemies dataOfEnemy = thisShip.GetComponent<DataOfEnemies>();
+        float distance = dataOfEnemy.DistanceForShooting;
         RaycastHit hit;
-        bool canShoot = Recharge();
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 50, _layerOfEnemy.value) && canShoot)
+        if (Physics.Raycast(thisShip.transform.position, thisShip.transform.TransformDirection(Vector3.forward), out hit, distance, enemyLayer))
         {
-            for(int i = 0; i < listOfGuns.Count; i++ )
-            {
-                if(listOfGuns[i].activeInHierarchy)
-                {
-                    IStandardShot shootFromGun = listOfGuns[i].GetComponent<IStandardShot>();
-                    shootFromGun.Shoot();
-                }
-            }
+            
+            UseGans(ref thisShip);
         }
     }
-    private bool Recharge()
+    private void UseGans(ref GameObject thisShip)
     {
-        if (_time >= _finishTime)
+        
+        DataOfEnemies dataOfEnemie = thisShip.GetComponent<DataOfEnemies>();
+        List<GameObject> gunList = dataOfEnemie.GunList;
+        for(int i=0; i < gunList.Count; i++)
         {
-            _time = 0;
-            return true;
-        }
-        else
-        {
-            _time += Time.deltaTime;
-            return false;
+            if(gunList[i].activeInHierarchy)
+            {
+                ShootFromGun standardShoot = gunList[i].GetComponent<ShootFromGun>();
+                standardShoot.Shoot();
+            }
         }
     }
 }

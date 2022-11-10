@@ -9,6 +9,7 @@ namespace ShipData
         public static PlayerData instance;
 
         [SerializeField] private GameObject _cursor;
+        [SerializeField] private List<Transform> _positionAroundPlayer;
         [SerializeField] private List<GameObject> _guns;
         [SerializeField] private List<GameObject> _abilities;
         [SerializeField] private float _playerSpeed;
@@ -25,6 +26,10 @@ namespace ShipData
         public Rigidbody Rigidbody
         {
             get { return _rigidbody; }
+        }
+        public List<Transform> PositionAroundPlayer
+        {
+            get { return _positionAroundPlayer; }
         }
 
         public GameObject Cursor

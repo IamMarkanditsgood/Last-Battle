@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IStandardShoot
+public enum ETypeOfAIBrain
 {
-    public void Shoot();
+    AIType1,
+    AIType2,
+    AIType3,
 }

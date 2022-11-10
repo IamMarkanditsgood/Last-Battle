@@ -10,8 +10,13 @@ public class DataOfGun : MonoBehaviour
     [SerializeField] private float _damageIndex;
     [SerializeField] private float _timeRechargeIndex;
     [SerializeField] private float _recharge;
+    private bool _isCharged = true;
 
-
+    public bool IsCharged
+    {
+        get { return _isCharged; }
+        set { _isCharged = value; }
+    }
     public float DamageIndex
     {
         get { return _damageIndex; }
@@ -24,7 +29,7 @@ public class DataOfGun : MonoBehaviour
     }
     public float ReCharge
     {
-        get { return _recharge; }
+        get { return _recharge / _timeRechargeIndex; }
         set { _recharge = value; }
     }
     public ETypeOfGun TypeOfGun

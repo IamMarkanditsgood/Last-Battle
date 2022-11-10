@@ -16,7 +16,7 @@ namespace InputDeviceControllers
                     if (listOfGuns[i].activeInHierarchy)
                     {
                         GameObject obj = listOfGuns[i];
-                        IStandardShot shooting = obj.GetComponent<IStandardShot>();
+                        IStandardShoot shooting = obj.GetComponent<IStandardShoot>();
                         shooting.Shoot();
                     }
                 }

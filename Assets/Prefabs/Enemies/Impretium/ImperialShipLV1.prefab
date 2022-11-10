@@ -11,14 +11,9 @@ GameObject:
   - component: {fileID: 1863450673221274112}
   - component: {fileID: 1863450673546778068}
   - component: {fileID: 1863450673546778069}
-  - component: {fileID: 1863450673546778056}
-  - component: {fileID: 1863450673546778057}
   - component: {fileID: 1863450673546778059}
-  - component: {fileID: 1863450673546778071}
-  - component: {fileID: 1863450673546778064}
-  - component: {fileID: 1863450673546778065}
-  - component: {fileID: 1863450674136122333}
-  - component: {fileID: -7471011303344754031}
+  - component: {fileID: 3202128194303849862}
+  - component: {fileID: -3915029270258997963}
   m_Layer: 6
   m_Name: ImperialShipLV1
   m_TagString: Enemy
@@ -73,33 +68,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.65
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1863450673546778056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863450673221637664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 002c9f7e7e7db3d4aac98fb361b0c79f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
---- !u!114 &1863450673546778057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863450673221637664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d48a497b96780e4a89cb8ce174ee2d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _objectWithAIScripts: {fileID: 0}
 --- !u!195 &1863450673546778059
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -122,20 +90,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1863450673546778071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863450673221637664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74d3e98fb4acddf469d7c9feba54bc7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _particlesForDeath: {fileID: 7819775807870019735, guid: f916833a9285b1244b9a2a6ef531b2a5, type: 3}
---- !u!114 &1863450673546778064
+--- !u!114 &3202128194303849862
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,14 +102,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _listOfGun:
-  - {fileID: 1863450674248760852}
-  - {fileID: 4669053346225681418}
-  _scriptableObject: {fileID: 11400000, guid: 9afaf76e1fe366f49af3c3286ce84666, type: 2}
-  _healthe: 100
-  _shield: 100
+  _player: {fileID: 0}
+  _listOfGun: []
+  _scriptableObject: {fileID: 0}
+  _healthe: 0
+  _shield: 0
+  _healtheIndex: 0
+  _shieldIndex: 0
   _reChargeTime: 0
---- !u!114 &1863450673546778065
+--- !u!114 &-3915029270258997963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,45 +119,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1863450673221637664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bdbe54afd9e2046a997b1cb4387078, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c578e7d9a830984db8ff191ba718a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objectWithGunsList: {fileID: 1863450673221637664}
-  _layerOfEnemy:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &1863450674136122333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863450673221637664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1912b5b38ab8db74d901dc7f1c7162c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _positionAroundPlayer:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!208 &-7471011303344754031
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863450673221637664}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 0
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &1863450673221637666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,7 +1415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeOfGun: 0
   _positionsForShooting: {fileID: 7013114647571350222}
-  _scriptableObject: {fileID: 11400000, guid: fe4f7c171d6db204dace5bb39767fb4a, type: 2}
+  _bullet: {fileID: 0}
   _damageIndex: 1
   _timeRechargeIndex: 1
   _recharge: 2
@@ -1645,11 +1565,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0257593a2bf522c4699e668213d2f13a, type: 3}
---- !u!1 &1863450674248760852 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2824016722810490120, guid: 0257593a2bf522c4699e668213d2f13a, type: 3}
-  m_PrefabInstance: {fileID: 4534177855976698652}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1863450674248760853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2824016722810490121, guid: 0257593a2bf522c4699e668213d2f13a, type: 3}

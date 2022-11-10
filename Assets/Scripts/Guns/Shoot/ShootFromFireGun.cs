@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootFromFireGun : MonoBehaviour, IStandardShot
+public class ShootFromFireGun : MonoBehaviour, IStandardShoot
 {
     public void Shoot()
     {
