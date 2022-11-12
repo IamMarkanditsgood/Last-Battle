@@ -14,7 +14,7 @@ public class TouchingObjects
             float damage = dataOfProjectile.Damage * dataOfProjectile.DamageIndex;
             DataOfEnemies dataOfEnemies = collision.gameObject.GetComponent<DataOfEnemies>();
             controllerOfHealthe.TakeDamage(damage, dataOfEnemies);
-            cleanPrefab.DeleteParticle(dataOfProjectile);
+            cleanPrefab.CleanProjectile(bullet);
             bullet.SetActive(false);
 
         }
@@ -22,7 +22,7 @@ public class TouchingObjects
         {
             CleanPrefab cleanPrefab = new CleanPrefab();
             DataOfProjectile dataOfProjectile = bullet.GetComponent<DataOfProjectile>();
-            cleanPrefab.DeleteParticle(dataOfProjectile);
+            cleanPrefab.CleanProjectile(bullet);
             bullet.SetActive(false);
         }
     }

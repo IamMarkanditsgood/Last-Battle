@@ -5,15 +5,15 @@ using UnityEngine.AI;
 using ShipData;
 public class AIBrainType2 : IAITypesOfBrain
 {
-    public void AITakeTarget(ref Vector3 target, ref bool isOnTarget, ref NavMeshAgent agent, GameObject thisShip, GameObject player, float distanceToPlayer)
+    public void AITakeTarget(ref Vector3 target, ref bool isOnTarget, ref NavMeshAgent agent, GameObject thisShip, GameObject player, float distanceToPlayer, float distanceForUsingAI)
     {
-        if (distanceToPlayer > 20)
+        if (distanceToPlayer > distanceForUsingAI)
         {
             isOnTarget = true;
             target = player.transform.position;
             MoveToTarget(target, agent);
         }
-        else if (distanceToPlayer < 20 && isOnTarget)
+        else if (distanceToPlayer < distanceForUsingAI && isOnTarget)
         {
 
             isOnTarget = false;

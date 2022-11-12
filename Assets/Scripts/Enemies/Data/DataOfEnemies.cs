@@ -14,6 +14,7 @@ public class DataOfEnemies : MonoBehaviour, IGanListOfShip
     [SerializeField] private float _shield;
     [SerializeField] private float _healtheIndex;
     [SerializeField] private float _shieldIndex;
+    [SerializeField] private float _distanceForUsingAiAlgor;
     [SerializeField] private LayerMask _layerMaskOfEnemy;
 
     private void OnEnable()
@@ -62,6 +63,10 @@ public class DataOfEnemies : MonoBehaviour, IGanListOfShip
     {
         get { return _shieldIndex; }
         set { _shieldIndex = value; }
+    }
+    public float DistanceForUsingAiAlgor
+    {
+        get { return _distanceForUsingAiAlgor; }
     }
     public List<GameObject> GunList
     {

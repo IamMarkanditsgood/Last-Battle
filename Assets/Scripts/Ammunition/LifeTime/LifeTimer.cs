@@ -8,7 +8,7 @@ public class LifeTimer
     {
         yield return new WaitForSeconds(timeLife);
         CleanPrefab cleanPrefab = new CleanPrefab();
-        cleanPrefab.DeleteParticle(bullet.GetComponent<DataOfProjectile>());
+        cleanPrefab.CleanProjectile(bullet);
         bullet.SetActive(false);
     }
 }

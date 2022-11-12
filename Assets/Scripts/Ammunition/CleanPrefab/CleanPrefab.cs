@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class CleanPrefab
 {
-    public void DeleteParticle(DataOfProjectile dataOfProjectile)
+    public void CleanProjectile(GameObject curentBullet)
     {
+        DataOfProjectile dataOfProjectile = curentBullet.GetComponent<DataOfProjectile>();
+        curentBullet.GetComponent<MeshRenderer>().sharedMaterial = null;
+        curentBullet.GetComponent<MeshFilter>().mesh = null;
         Object.Destroy(dataOfProjectile.CurrentParticles);
     }
 }

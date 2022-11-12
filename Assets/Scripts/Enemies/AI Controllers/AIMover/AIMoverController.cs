@@ -11,7 +11,8 @@ public class AIMoverController
         IAITypesOfBrain aITypesOfBrain = TakeTypeOfBrain(dataofEnemy);
         IsOnTarget(ref isOnTarget, thisShip, target);
         float distanceOfPlayer = Vector3.Distance(thisShip.transform.position, player.transform.position);
-        aITypesOfBrain.AITakeTarget(ref target ,ref isOnTarget, ref navMeshAgent, thisShip, player, distanceOfPlayer);
+        float distanceForUsingAi = dataofEnemy.DistanceForUsingAiAlgor;
+        aITypesOfBrain.AITakeTarget(ref target ,ref isOnTarget, ref navMeshAgent, thisShip, player, distanceOfPlayer, distanceForUsingAi);
     }
     private void IsOnTarget(ref bool isOnTarget,GameObject thisShip,Vector3 target)
     {

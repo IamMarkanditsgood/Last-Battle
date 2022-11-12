@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour
     private void FixedUpdate()
     {
         ViewIsOnShootDistance viewIsOnShootDistance = new ViewIsOnShootDistance();
-        viewIsOnShootDistance.IsOnShootDistance(_dataOfEnemies.LayerMaskOfEnemy, gameObject);
+        viewIsOnShootDistance.IsOnShootDistance(_dataOfEnemies.LayerMaskOfEnemy, gameObject, _dataOfEnemies.DistanceForShooting);
         _lookAtPlayer.RotateOnPlayer(gameObject, _dataOfEnemies.Player);
         
     }

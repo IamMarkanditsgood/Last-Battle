@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class ViewIsOnShootDistance
 {
-    public void IsOnShootDistance(LayerMask enemyLayer, GameObject thisShip)
+    public void IsOnShootDistance(LayerMask enemyLayer, GameObject thisShip, float distance)
     {
-        DataOfEnemies dataOfEnemy = thisShip.GetComponent<DataOfEnemies>();
-        float distance = dataOfEnemy.DistanceForShooting;
         RaycastHit hit;
         if (Physics.Raycast(thisShip.transform.position, thisShip.transform.TransformDirection(Vector3.forward), out hit, distance, enemyLayer))
         {
@@ -24,7 +22,7 @@ public class ViewIsOnShootDistance
         {
             if(gunList[i].activeInHierarchy)
             {
-                ShootFromGun standardShoot = gunList[i].GetComponent<ShootFromGun>();
+                IStandardShoot standardShoot = gunList[i].GetComponent<IStandardShoot>();
                 standardShoot.Shoot();
             }
         }
