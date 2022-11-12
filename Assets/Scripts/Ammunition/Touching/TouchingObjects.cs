@@ -11,7 +11,7 @@ public class TouchingObjects
             CleanPrefab cleanPrefab = new CleanPrefab();
             DataOfProjectile dataOfProjectile = bullet.GetComponent<DataOfProjectile>();
             ControllerOfEnemyHealthe controllerOfHealthe = new ControllerOfEnemyHealthe();
-            float damage = dataOfProjectile.ScriptableObjects.Damage * dataOfProjectile.DamageIndex;
+            float damage = dataOfProjectile.Damage * dataOfProjectile.DamageIndex;
             DataOfEnemies dataOfEnemies = collision.gameObject.GetComponent<DataOfEnemies>();
             controllerOfHealthe.TakeDamage(damage, dataOfEnemies);
             cleanPrefab.DeleteParticle(dataOfProjectile);

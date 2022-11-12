@@ -19,11 +19,11 @@ public class ShootFromGun : MonoBehaviour, IStandardShoot
             if (bullet != null)
             {
                 bullet.transform.position = dataOfGun.PositionForSooting.position;
-                bullet.transform.rotation = gameObject.transform.rotation;
+                bullet.transform.rotation = dataOfGun.PositionForSooting.rotation;
                 bullet.GetComponent<DataOfProjectile>().ScriptableObjects = dataOfGun.Bullet;
                 bullet.SetActive(true);
                 CreateProjectile createProjectile = new CreateProjectile();
-                createProjectile.CreateNewFeatures(dataOfGun.DamageIndex, bullet);
+                createProjectile.CreateNewFeatures(dataOfGun, bullet);
                 dataOfGun.IsCharged = false;
                 _coroutine = StartCoroutine(WaitDeath(dataOfGun.ReCharge));
             }

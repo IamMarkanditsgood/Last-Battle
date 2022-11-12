@@ -6,7 +6,7 @@ public class DataOfEnemies : MonoBehaviour, IGanListOfShip
 {
     [SerializeField] private ETypeOfAIBrain _typeOfAIbrain;
     [SerializeField] private GameObject _player;
-    
+    [SerializeField] private Transform _positionBehindShip;
     [SerializeField] private List<GameObject> _listOfGun;
     [SerializeField] private EnemyData _scriptableObject;
     [SerializeField] private float _distanceForShooting;
@@ -24,6 +24,10 @@ public class DataOfEnemies : MonoBehaviour, IGanListOfShip
     public ETypeOfAIBrain TypeOfAIBrain
     {
         get { return _typeOfAIbrain; }
+    }
+    public Transform PositionBehindShip
+    {
+        get { return _positionBehindShip; }
     }
     public LayerMask LayerMaskOfEnemy
     {

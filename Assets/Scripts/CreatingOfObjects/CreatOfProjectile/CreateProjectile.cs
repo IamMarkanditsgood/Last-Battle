@@ -5,10 +5,11 @@ namespace CreatingAnObjects
     public class CreateProjectile
     {
         private DataOfProjectile _dataOfProjectile;
-        public void CreateNewFeatures(float damageIndex, GameObject bullet)
+        public void CreateNewFeatures(DataOfGun dataOfGun, GameObject bullet)
         {
             _dataOfProjectile = bullet.GetComponent<DataOfProjectile>();
-            _dataOfProjectile.DamageIndex = damageIndex;
+            _dataOfProjectile.DamageIndex = dataOfGun.DamageIndex;
+            _dataOfProjectile.Damage = dataOfGun.Damage;
 
             if (_dataOfProjectile.ScriptableObjects.Mesh != null)
             {

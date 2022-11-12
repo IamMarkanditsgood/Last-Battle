@@ -5,30 +5,32 @@ using UnityEngine.AI;
 using ShipData;
 public class AIBrainType2 : IAITypesOfBrain
 {
-    public Vector3 AITakeTarget(ref bool isOnTarget, ref NavMeshAgent agent, GameObject thisShip, GameObject player, float distanceToPlayer)
+    public void AITakeTarget(ref Vector3 target, ref bool isOnTarget, ref NavMeshAgent agent, GameObject thisShip, GameObject player, float distanceToPlayer)
     {
-        Vector3 target;
-        if (distanceToPlayer < 10 && isOnTarget == true)
+        if (distanceToPlayer > 20)
         {
-
-            agent.ResetPath();
-            target = AIFindOutTarget(player);
-            isOnTarget = false;
-            return target;
-
-        }
-        else if (distanceToPlayer > 10)
-        {
-            target = player.transform.position;
             isOnTarget = true;
-            return target;
+            target = player.transform.position;
+            MoveToTarget(target, agent);
         }
-        return player.transform.position; ;
+        else if (distanceToPlayer < 20 && isOnTarget)
+        {
+
+            isOnTarget = false;
+            target = AIFindOutTarget(player);
+
+            MoveToTarget(target, agent);
+        }
     }
     private Vector3 AIFindOutTarget(GameObject player)
     {
         PlayerData dataOfPlayer = player.GetComponent<PlayerData>();
         Vector3 target = dataOfPlayer.PositionAroundPlayer[Random.Range(0, dataOfPlayer.PositionAroundPlayer.Count)].position;
         return target;
+    }
+    private void MoveToTarget(Vector3 target, NavMeshAgent agent)
+    {
+       
+        agent.SetDestination(target);
     }
 }

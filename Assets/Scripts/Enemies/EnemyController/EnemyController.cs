@@ -20,14 +20,14 @@ public class EnemyController : MonoBehaviour
     {
         ControllerOfEnemyHealthe controllerOfEnemyHealthe = new ControllerOfEnemyHealthe();
         controllerOfEnemyHealthe.ShouldDie(gameObject, _dataOfEnemies);
+        AIMoverController Movecontroller = new AIMoverController();
+        Movecontroller.Move(ref _isOnTarget, ref _target, gameObject, _dataOfEnemies.Player, _dataOfEnemies, _agent);
     }
     private void FixedUpdate()
     {
-   
         ViewIsOnShootDistance viewIsOnShootDistance = new ViewIsOnShootDistance();
         viewIsOnShootDistance.IsOnShootDistance(_dataOfEnemies.LayerMaskOfEnemy, gameObject);
         _lookAtPlayer.RotateOnPlayer(gameObject, _dataOfEnemies.Player);
-        AIMoverController Movecontroller = new AIMoverController();
-        Movecontroller.Move(ref _isOnTarget, ref _target, gameObject, _dataOfEnemies.Player,  _dataOfEnemies, _agent);
+        
     }
 }

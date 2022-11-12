@@ -6,12 +6,18 @@ public class DataOfProjectile : MonoBehaviour
 {
     [SerializeField] private AmmunitionData scriptableObjects;
     private GameObject _currentParticles;
-    private float _damageIndex = 2;
+    private float _damageIndex = 1;
+    private float _damage;
     private float _speedIndex = 1;
     public float DamageIndex
     {
         get { return _damageIndex; }
         set { _damageIndex = value; }
+    }
+    public float Damage
+    {
+        get { return _damage; }
+        set { _damage = value; }
     }
     public float speedIndex
     {
