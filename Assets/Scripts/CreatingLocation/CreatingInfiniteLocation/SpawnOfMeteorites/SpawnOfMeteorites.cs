@@ -14,7 +14,7 @@ public class SpawnOfMeteorites : AFirstSpawn
             float x = randomizer.RandomXForSpawn(_startSetings.XLevelSize);
             float z = randomizer.RandomZForSpawn(_startSetings.ZLevelSize);
             GameObject obj = randomizer.RandomObject(PrefabsStorey.instance.Meteorites);
-            GameObject meteorite = Instantiate(obj, new Vector3(x, 0, z) , Quaternion.identity);
+            GameObject meteorite = Object.Instantiate(obj, new Vector3(x, 0, z) , Quaternion.identity);
             meteorite.transform.SetParent(LevelData.instance.MeteoriteConteiner);
         }
     }

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SpawnOfProjectiles : AFirstSpawn
 {
-
-    [SerializeField] private GameObject _prefab;
     public override void FirstSpawn()
     {
         StartSetings startSetings = StartSetings.instance;
@@ -17,7 +15,7 @@ public class SpawnOfProjectiles : AFirstSpawn
     public void CreateNewProjectile(GameObject bullet)
     {
         ObjectsComposition ammunitionStore = ObjectsComposition.Instance;
-        GameObject sphere = Instantiate(bullet);
+        GameObject sphere = Object.Instantiate(bullet);
         sphere.SetActive(false);
         sphere.transform.SetParent(LevelData.instance.ProjectileConteiner);
         ammunitionStore.PoolStandardBullets = sphere;

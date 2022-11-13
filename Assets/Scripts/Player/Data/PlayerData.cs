@@ -13,8 +13,10 @@ namespace ShipData
         [SerializeField] private List<GameObject> _guns;
         [SerializeField] private List<GameObject> _abilities;
         [SerializeField] private float _playerSpeed;
+        [SerializeField] private float _maxSpeed;
         [SerializeField] private float _health;
         [SerializeField] private float _shield;
+    
 
         private Rigidbody _rigidbody;
 
@@ -47,6 +49,7 @@ namespace ShipData
             return _abilities;
         }
         public float PlayerSpeed { get { return _playerSpeed; } set { _playerSpeed = value; } }
+        public float MaxSpeed { get { return _maxSpeed; } set { _maxSpeed = value; } }
         public float Health { get { return _health; } set { _health = value; } }
         public float Shield { get { return _shield; } set { _shield = value; } }
     }

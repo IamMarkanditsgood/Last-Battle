@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreatingOfMass : MonoBehaviour
+public class CreatingOfMass
 {
-    public void CreateMass()
+    public void CreateMass(GameObject thisMeteorite)
     {
         Rigidbody rb;
-        rb = GetComponent<Rigidbody>();
-        rb.mass = gameObject.transform.localScale.x * 3;
+        rb = thisMeteorite.GetComponent<Rigidbody>();
+        rb.mass = thisMeteorite.transform.localScale.x * 3;
     }
 }

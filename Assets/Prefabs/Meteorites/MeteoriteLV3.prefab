@@ -12,11 +12,9 @@ GameObject:
   - component: {fileID: 7447658891299735545}
   - component: {fileID: 7447658891299735546}
   - component: {fileID: 3321023876363601141}
-  - component: {fileID: 1196722848717301086}
-  - component: {fileID: 1673243193610934307}
   - component: {fileID: -6805878908214260033}
-  - component: {fileID: -5098045949544306655}
   - component: {fileID: -5883398308980758405}
+  - component: {fileID: 1196722848717301086}
   m_Layer: 9
   m_Name: MeteoriteLV3
   m_TagString: Untagged
@@ -105,30 +103,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 0
---- !u!114 &1196722848717301086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7447658891299735540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df8b41736842e5a4a8fdadf377fd3661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1673243193610934307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7447658891299735540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 773e8ca63ae34294cb4a4a1aa38b13d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &-6805878908214260033
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -143,18 +117,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a06b7d8123805974182a9aee714fe013, type: 3}
---- !u!114 &-5098045949544306655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7447658891299735540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 932dd3352d8eea447a14a394a3c04b1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!208 &-5883398308980758405
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -164,10 +126,22 @@ NavMeshObstacle:
   m_GameObject: {fileID: 7447658891299735540}
   m_Enabled: 1
   serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.90500003, y: 0.86600006, z: 0.85200006}
+  m_Shape: 0
+  m_Extents: {x: 0.90500003, y: 0.86600006, z: 0.90500003}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.028, y: -0.056, z: 0.033}
   m_TimeToStationary: 0.5
+--- !u!114 &1196722848717301086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7447658891299735540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b41736842e5a4a8fdadf377fd3661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

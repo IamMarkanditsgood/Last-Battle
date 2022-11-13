@@ -37,7 +37,7 @@ public class SpawnOfEnemys : AFirstSpawn
     }
     public GameObject SpawnOfEnemy(GameObject obj)
     {
-        GameObject enemy = Instantiate(obj);
+        GameObject enemy = Object.Instantiate(obj);
         enemy.SetActive(false);
         enemy.transform.SetParent(LevelData.instance.EnemiesConteiner);
         return enemy;
