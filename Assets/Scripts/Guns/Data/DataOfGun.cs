@@ -9,14 +9,16 @@ public class DataOfGun : MonoBehaviour
     [SerializeField] private AmmunitionData _bullet;
     [SerializeField] private float _damageIndex;
     [SerializeField] private float _damage;
+    [SerializeField] private float _firstDamage;
     [SerializeField] private float _timeRechargeIndex;
     [SerializeField] private float _recharge;
+    [SerializeField] private float _firstRechargeTime;
     private bool _isCharged = true;
 
     private void OnEnable()
     {
-        _damage = _damage * _damageIndex;
-        _recharge = _recharge / _timeRechargeIndex;
+        _damage = _firstDamage * _damageIndex;
+        _recharge = _firstRechargeTime / (_timeRechargeIndex/2);
     }
     public bool IsCharged
     {
@@ -26,7 +28,6 @@ public class DataOfGun : MonoBehaviour
     public float Damage
     {
         get { return _damage; }
-        
     }
     public float DamageIndex
     {
@@ -52,5 +53,14 @@ public class DataOfGun : MonoBehaviour
     public AmmunitionData Bullet
     {
         get { return _bullet; }
+    }
+    public void ReSetDamage()
+    {
+        _damage = _firstDamage * _damageIndex;
+        
+    }
+    public void ReSetRecharge()
+    {
+        _recharge = _firstRechargeTime / (_timeRechargeIndex / 2);
     }
 }

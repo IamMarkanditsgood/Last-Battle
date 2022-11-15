@@ -1664,8 +1664,10 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: 14f4bb546e0c3e04bbdd3223b5ce8ab4, type: 2}
   _damageIndex: 1
   _damage: 1
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 0.5
+  _firstRechargeTime: 0
 --- !u!114 &142366820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3322,8 +3324,10 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: d358c25ee60c64a429250a0e5c14954f, type: 2}
   _damageIndex: 1
   _damage: 30
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 5
+  _firstRechargeTime: 0
 --- !u!114 &378972530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4910,8 +4914,10 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: fe4f7c171d6db204dace5bb39767fb4a, type: 2}
   _damageIndex: 1
   _damage: 1
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 0.1
+  _firstRechargeTime: 0
 --- !u!23 &565947584
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5399,8 +5405,10 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: 8af499ba0800b7c4f9caa180472dcc9b, type: 2}
   _damageIndex: 1
   _damage: 2
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 0.2
+  _firstRechargeTime: 0
 --- !u!23 &707638816
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10540,8 +10548,10 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: 8d676f66d347b3e409020f4a80dffbd0, type: 2}
   _damageIndex: 1
   _damage: 10
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 1
+  _firstRechargeTime: 0
 --- !u!23 &1613603810
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10820,6 +10830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a3dc6ee62a26041a1c2d609a4c2cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainData: {fileID: 250853088}
 --- !u!114 &1627003358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13018,8 +13029,10 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: ff128be17d710d74bb8e4f3c242d4f1e, type: 2}
   _damageIndex: 1
   _damage: 15
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 3
+  _firstRechargeTime: 0
 --- !u!23 &1932273975
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13220,8 +13233,10 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: 823d5d37a0ba1b44385a12aab87007e0, type: 2}
   _damageIndex: 1
   _damage: 15
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 2
+  _firstRechargeTime: 0
 --- !u!114 &1940970636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14106,6 +14121,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45424345}
     m_Modifications:
+    - target: {fileID: 376536505353807622, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
+      propertyPath: _firstDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 376536505353807622, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 376536505353807627, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14156,7 +14179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 376536505353807628, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
@@ -14265,8 +14288,10 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: fe4f7c171d6db204dace5bb39767fb4a, type: 2}
   _damageIndex: 2
   _damage: 10
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 2
+  _firstRechargeTime: 0
 --- !u!23 &1797081260974599496
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14401,8 +14426,10 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: 601928132bf56a04dbae71fc3f452210, type: 2}
   _damageIndex: 1
   _damage: 30
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 3
+  _firstRechargeTime: 0
 --- !u!114 &1903339469092552205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15035,8 +15062,10 @@ MonoBehaviour:
   _bullet: {fileID: 0}
   _damageIndex: 1
   _damage: 10
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 1
+  _firstRechargeTime: 0
 --- !u!1 &5528152402546149743
 GameObject:
   m_ObjectHideFlags: 0

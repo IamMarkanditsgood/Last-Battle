@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using ShipData;
 
 public class UpdatePanelController : MonoBehaviour
 {
+    [SerializeField] private MainDatas mainData;
     public void SetDATA(DataOfGunPanel dataOfGunPanel,  DataOfUpdatePanel dataOfUpdatePanel)
     {
          DataOfGunPanel _gunPanelData;
@@ -30,12 +31,34 @@ public class UpdatePanelController : MonoBehaviour
     {
         DataOfGunPanel dataOfGunPanel = gameObject.GetComponent<DataOfUpdatePanel>().DataOfGunPanel;
         dataOfGunPanel.DamageIndex++;
+        PlayerData playerData = mainData.PlayersShip.GetComponent<PlayerData>();
+        List<GameObject> gunList = playerData.TakeListOfGuns();
+        for(int i=0;i< gunList.Count; i++)
+        {
+            DataOfGun gunData = gunList[i].GetComponent<DataOfGun>();
+            if (gunData.TypeOfGun == dataOfGunPanel.ETypeOfGun)
+            {
+                gunData.DamageIndex = dataOfGunPanel.DamageIndex;
+                gunData.ReSetDamage();
+            }
+        }
         SetDATA(dataOfGunPanel, gameObject.GetComponent<DataOfUpdatePanel>());
     }
     public void AddRecharge()
     {
         DataOfGunPanel dataOfGunPanel = gameObject.GetComponent<DataOfUpdatePanel>().DataOfGunPanel;
         dataOfGunPanel.RechargeIndex++;
+        PlayerData playerData = mainData.PlayersShip.GetComponent<PlayerData>();
+        List<GameObject> gunList = playerData.TakeListOfGuns();
+        for (int i = 0; i < gunList.Count; i++)
+        {
+            DataOfGun gunData = gunList[i].GetComponent<DataOfGun>();
+            if (gunData.TypeOfGun == dataOfGunPanel.ETypeOfGun)
+            {
+                gunData.TimeRechargeIndex = dataOfGunPanel.RechargeIndex;
+                gunData.ReSetRecharge();
+            }
+        }
         SetDATA(dataOfGunPanel, gameObject.GetComponent<DataOfUpdatePanel>());
     }
 }
