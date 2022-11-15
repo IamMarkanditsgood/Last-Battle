@@ -8,8 +8,9 @@ public class DataOfGunPanel : MonoBehaviour
     [SerializeField] private bool _isBought = false;
     [SerializeField] private bool _isInstall = false;
     [SerializeField] private int _damageIndex;
-    [SerializeField] private int _rateOfShootingIndex;
+    [SerializeField] private int _rechargeIndex;
     [SerializeField] private int _price;
+    [SerializeField] private int _firstUpdatePrice;
     [SerializeField] private GameObject _buttonBuy;
     [SerializeField] private GameObject _buttonUpdate;
     [SerializeField] private GameObject _buttonInstall;
@@ -20,8 +21,9 @@ public class DataOfGunPanel : MonoBehaviour
     public bool IsBought { get { return _isBought; } set { _isBought = value; } }
     public bool IsInstall { get { return _isInstall; } set { _isInstall = value; } }
     public int DamageIndex { get { return _damageIndex; } set { _damageIndex = value;} }
-    public int RateOfShootingIndex { get { return _rateOfShootingIndex; } set { _rateOfShootingIndex = value; } }
+    public int RechargeIndex { get { return _rechargeIndex; } set { _rechargeIndex = value; } }
     public int Price { get { return _price; } set { _price = value; } }
+    public int FirstUpdatePrice { get { return _firstUpdatePrice; } set { _firstUpdatePrice = value; } }    
     public GameObject ButtonBuy { get { return _buttonBuy; } }
     public GameObject ButtonUpdate { get { return _buttonUpdate; } }
     public GameObject ButtonInstall { get { return _buttonInstall; } }

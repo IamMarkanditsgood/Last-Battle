@@ -2,16 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FindDataClassPanel : MonoBehaviour
+public class FindDataClassPanel
 {
-    [SerializeField] private GameObject _dataObject;
+
     private MainDatas _mainDatasOfCanvas;
 
-    private void Start()
-    {
-        _mainDatasOfCanvas = _dataObject.GetComponent<MainDatas>();
-    }
-    public DataOfGunPanel FindDataClass(ETypeOfGun eTypeOfGun)
+    public DataOfGunPanel FindDataClass(ETypeOfGun eTypeOfGun, MainDatas _mainDatasOfCanvas)
     {
         for (int i = 0; i < _mainDatasOfCanvas.GunPanels.Count; i++)
         {
@@ -20,7 +16,7 @@ public class FindDataClassPanel : MonoBehaviour
                 return _mainDatasOfCanvas.GunPanels[i];
             }
         }
-        print("Error!!: You have not this type of gun!");
+        Debug.Log("Error!!: You have not this type of gun!");
         return null;
     }
 }

@@ -25,10 +25,42 @@ public class ButtonsInstallGun : MonoBehaviour
     {
         Install(ETypeOfGun.BasicRocketGun);
     }
+    public void InstallAutoGun()
+    {
+        Install(ETypeOfGun.AutoGun);
+    }
+    public void InstallLaserGun()
+    {
+        Install(ETypeOfGun.LaserGun);
+    }
+    public void InstallLightBallGun()
+    {
+        Install(ETypeOfGun.LightBallGun);
+    }
+    public void InstallPlasmaGun()
+    {
+        Install(ETypeOfGun.PlasmaGun);
+    }
+    public void InstallQuantumGun()
+    {
+        Install(ETypeOfGun.QuantumGun);
+    }
+    public void InstallAlianAimRocketGun()
+    {
+        Install(ETypeOfGun.AlianAimRocketGun);
+    }
+    public void InstallAlianLightBallGun()
+    {
+        Install(ETypeOfGun.AlianLightBallGun);
+    }
+    public void InstallAlianBasicRocketGun()
+    {
+        Install(ETypeOfGun.AlianBasicRocketGun);
+    }
     private void Install(ETypeOfGun eTypeOfGun)
     {
-        FindDataClassPanel findDataClassPanel = GetComponent<FindDataClassPanel>();
-        DataOfGunPanel dataOfGupPanel = findDataClassPanel.FindDataClass(eTypeOfGun);
+        FindDataClassPanel findDataClassPanel = new FindDataClassPanel();
+        DataOfGunPanel dataOfGupPanel = findDataClassPanel.FindDataClass(eTypeOfGun, _mainDatasOfCanvas);
         dataOfGupPanel.IsInstall = true;
         dataOfGupPanel.ButtonInstall.SetActive(false);
         dataOfGupPanel.ButtonInstalled.SetActive(true);
