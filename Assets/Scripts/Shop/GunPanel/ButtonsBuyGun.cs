@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class ButtonsBuyGun : MonoBehaviour
 {
-    [SerializeField] private GameObject _mainDataObject;
-    private MainDatas _mainDatasOfCanvas;
+    //[SerializeField] private GameObject _mainDataObject;
+    [SerializeField] private MainDatas _mainDatasOfCanvas;
+    [SerializeField] private DataWeaponsPanel _weaponPanelData;
 
-    private void Start()
+    /*private void Start()
     {
         _mainDatasOfCanvas = _mainDataObject.GetComponent<MainDatas>();
-    }
+    }*/
     public void BuyInertialCannonGun()
     {
         Buy(ETypeOfGun.InertialArtillery);
@@ -58,7 +59,7 @@ public class ButtonsBuyGun : MonoBehaviour
     private void Buy(ETypeOfGun eTypeOfGun)
     {
         FindDataClassPanel findDataClassPanel = new FindDataClassPanel();
-        DataOfGunPanel dataOfGupPanel = findDataClassPanel.FindDataClass(eTypeOfGun, _mainDatasOfCanvas);
+        DataOfGunPanel dataOfGupPanel = findDataClassPanel.FindDataClass(eTypeOfGun, _weaponPanelData);
         if (LevelData.instance.Money > dataOfGupPanel.Price)
         {
             LevelData.instance.Money -= dataOfGupPanel.Price;

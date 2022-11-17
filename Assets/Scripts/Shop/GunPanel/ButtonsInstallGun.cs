@@ -5,14 +5,14 @@ using ShipData;
 
 public class ButtonsInstallGun : MonoBehaviour
 {
-    [SerializeField] private GameObject _dataObject;
-    
-    private MainDatas _mainDatasOfCanvas;
+    //[SerializeField] private GameObject _dataObject;
+    [SerializeField] private DataWeaponsPanel _dataWeaponsPanel;
+    [SerializeField] private MainDatas _mainDatasOfCanvas;
 
-    private void Start()
+    /*private void Start()
     {
         _mainDatasOfCanvas = _dataObject.GetComponent<MainDatas>();
-    }
+    }*/
     public void InstallInertialCannonGun()
     {
         Install(ETypeOfGun.InertialArtillery);
@@ -60,7 +60,7 @@ public class ButtonsInstallGun : MonoBehaviour
     private void Install(ETypeOfGun eTypeOfGun)
     {
         FindDataClassPanel findDataClassPanel = new FindDataClassPanel();
-        DataOfGunPanel dataOfGupPanel = findDataClassPanel.FindDataClass(eTypeOfGun, _mainDatasOfCanvas);
+        DataOfGunPanel dataOfGupPanel = findDataClassPanel.FindDataClass(eTypeOfGun, _dataWeaponsPanel);
         dataOfGupPanel.IsInstall = true;
         dataOfGupPanel.ButtonInstall.SetActive(false);
         dataOfGupPanel.ButtonInstalled.SetActive(true);
@@ -87,7 +87,7 @@ public class ButtonsInstallGun : MonoBehaviour
     }
     private void ChangeButtons(ETypeOfGun eTypeOfGun)
     {
-        List<DataOfGunPanel> listOfGunPanels = _mainDatasOfCanvas.GunPanels;
+        List<DataOfGunPanel> listOfGunPanels = _dataWeaponsPanel.GunPanels;
         for (int i = 0; i < listOfGunPanels.Count; i++)
         {
             if (listOfGunPanels[i].ETypeOfGun != eTypeOfGun && listOfGunPanels[i].IsBought)

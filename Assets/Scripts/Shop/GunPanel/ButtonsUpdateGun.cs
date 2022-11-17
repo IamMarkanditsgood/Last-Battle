@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class ButtonsUpdateGun : MonoBehaviour
 {
-    [SerializeField] private GameObject _mainDataObject;
+    //[SerializeField] private GameObject _mainDataObject;
     [SerializeField] private UpdatePanelController _updatePanelController;
-    private MainDatas mainData;
-    private void Start()
+    [SerializeField] private MainDatas mainData;
+    [SerializeField] private DataWeaponsPanel weaponsPanelData;
+    /*private void Start()
     {
         mainData = _mainDataObject.GetComponent<MainDatas>();
-    }
+    }*/
     public void UpdateInertialCannonGun()
     {
         SwitchOnUpdatePanel(ETypeOfGun.InertialArtillery);
@@ -60,7 +61,7 @@ public class ButtonsUpdateGun : MonoBehaviour
         
         DataOfUpdatePanel dataOfUpdatePanel = mainData.UpdateGunPanel.GetComponent<DataOfUpdatePanel>();
         FindDataClassPanel findDataClassPanel = new FindDataClassPanel();
-        DataOfGunPanel dataOfGunPanel = findDataClassPanel.FindDataClass(eTypeOfGun, mainData);
+        DataOfGunPanel dataOfGunPanel = findDataClassPanel.FindDataClass(eTypeOfGun, weaponsPanelData);
         mainData.UpdateGunPanel.GetComponent<DataOfUpdatePanel>().DataOfGunPanel = dataOfGunPanel;
         dataOfUpdatePanel.FirstPrices = dataOfGunPanel.FirstUpdatePrice;
         mainData.UpdateGunPanel.SetActive(true);
