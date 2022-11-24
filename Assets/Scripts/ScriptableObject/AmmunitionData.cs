@@ -10,6 +10,7 @@ public class AmmunitionData : ScriptableObject
     [SerializeField] private Mesh _mesh;
     [SerializeField] private float _speed;
     [SerializeField] private float _lifeTime;
+    [SerializeField] private float _sizeOfCollider;
     [SerializeField] private Vector3 _size;
     [SerializeField] private GameObject _particles;
 
@@ -19,5 +20,6 @@ public class AmmunitionData : ScriptableObject
     public Mesh Mesh => _mesh;
     public float Speed => _speed;
     public float LifeTime => _lifeTime;
+    public float SizeOfCollider => _sizeOfCollider;
     public Vector3 Size => _size;
 }

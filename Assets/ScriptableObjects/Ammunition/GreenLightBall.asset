@@ -15,8 +15,8 @@ MonoBehaviour:
   _typeOfProjectile: 1
   _material: {fileID: 0}
   _mesh: {fileID: 0}
-  _damage: 10
   _speed: 15
   _lifeTime: 10
+  _sizeOfCollider: 2.5
   _size: {x: 1, y: 1, z: 1}
   _particles: {fileID: 5707740349253496778, guid: 222b350cfc8b8774db0018f79648fca4, type: 3}

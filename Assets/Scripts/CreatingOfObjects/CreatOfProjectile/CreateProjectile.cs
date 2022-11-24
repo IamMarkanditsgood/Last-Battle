@@ -25,6 +25,7 @@ namespace CreatingAnObjects
                 AddParticle(bullet);
             }
             bullet.transform.localScale = _dataOfProjectile.ScriptableObjects.Size;
+            bullet.GetComponent<SphereCollider>().radius = _dataOfProjectile.ScriptableObjects.SizeOfCollider;
             //gameObject.tag = _dataOfProjectile.ScriptableObjects.Name;
         }
         private void AddMesh(GameObject bullet)

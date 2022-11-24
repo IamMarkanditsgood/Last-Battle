@@ -22,10 +22,11 @@ public class ShootFromGun : MonoBehaviour, IStandardShoot
                 bullet.transform.rotation = dataOfGun.PositionForSooting.rotation;
                 bullet.GetComponent<DataOfProjectile>().ScriptableObjects = dataOfGun.Bullet;
                 bullet.SetActive(true);
+                bullet.layer = gameObject.layer;
                 CreateProjectile createProjectile = new CreateProjectile();
                 createProjectile.CreateNewFeatures(dataOfGun, bullet);
                 dataOfGun.IsCharged = false;
-                _coroutine = StartCoroutine(WaitDeath(dataOfGun.ReCharge));
+                _coroutine = StartCoroutine(WaitShoot(dataOfGun.ReCharge));
             }
         }
     }
@@ -50,7 +51,7 @@ public class ShootFromGun : MonoBehaviour, IStandardShoot
             StopCoroutine(_coroutine);
         }
     }
-    public IEnumerator WaitDeath(float rechargeTime)
+    public IEnumerator WaitShoot(float rechargeTime)
     {
         
         yield return new WaitForSeconds(rechargeTime);

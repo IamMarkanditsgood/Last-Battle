@@ -34,7 +34,7 @@ public class DataOfEnemies : MonoBehaviour, IGanListOfShip
     {
         get { return _layerMaskOfEnemy; }
     }
-    public GameObject Player { get { return _player; } }
+    public GameObject Player { get { return _player; } set { _player = value; } }
     public List<GameObject> TakeListOfGuns()
     {
         return _listOfGun;

@@ -7,7 +7,6 @@ namespace ShipData
     public class PlayerData : MonoBehaviour, IGanListOfShip, IAbilitiesOfShip
     {
         public static PlayerData instance;
-
         [SerializeField] private GameObject _cursor;
         [SerializeField] private List<Transform> _positionAroundPlayer;
         [SerializeField] private List<GameObject> _guns;
@@ -24,7 +23,9 @@ namespace ShipData
         {
             instance = this;
             _rigidbody = GetComponent<Rigidbody>();
+   
         }
+
         public Rigidbody Rigidbody
         {
             get { return _rigidbody; }

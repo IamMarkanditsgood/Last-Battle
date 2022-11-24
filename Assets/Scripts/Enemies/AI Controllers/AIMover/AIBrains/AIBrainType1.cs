@@ -31,7 +31,6 @@ public class AIBrainType1 : IAITypesOfBrain
     }
     private void MoveToTarget(Vector3 target, NavMeshAgent agent)
     {
-        Debug.Log(target);
         agent.SetDestination(target);
     }
 }

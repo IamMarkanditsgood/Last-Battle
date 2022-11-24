@@ -1540,6 +1540,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: AutoGun1
       objectReference: {fileID: 0}
+    - target: {fileID: 6873628892620230711, guid: 83650f6c3869009409ee8b316c809343, type: 3}
+      propertyPath: _firstDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873628892620230711, guid: 83650f6c3869009409ee8b316c809343, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83650f6c3869009409ee8b316c809343, type: 3}
 --- !u!4 &6599136634564891407 stripped
@@ -1610,6 +1618,14 @@ PrefabInstance:
     - target: {fileID: 6873628892620230711, guid: 83650f6c3869009409ee8b316c809343, type: 3}
       propertyPath: _recharge
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873628892620230711, guid: 83650f6c3869009409ee8b316c809343, type: 3}
+      propertyPath: _firstDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873628892620230711, guid: 83650f6c3869009409ee8b316c809343, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83650f6c3869009409ee8b316c809343, type: 3}

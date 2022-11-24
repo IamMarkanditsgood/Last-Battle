@@ -12,6 +12,7 @@ namespace Controllers
         private InputKeyboardController _keyboardController = new InputKeyboardController();
         private InputMouseController _mouseController = new InputMouseController();
         private LookAtTheSight _lookAt = new LookAtTheSight();
+        private HealtheAndShieldController _healtheAndShieldController = new HealtheAndShieldController();
 
         private GameObject _playerShip;
 
@@ -26,11 +27,13 @@ namespace Controllers
         {
             _lookAt.LookAtCursor(_playerData, _playerShip);
             _mouseController.InputController(_playerData);
+            _healtheAndShieldController.CheckHealtheAndShield(_playerData.Health, _playerData.Shield, gameObject, true);
         }
         private void FixedUpdate()
         {
             _keyboardController.InputController(_playerData, _playerShip);
         }
+
 
     }
 }

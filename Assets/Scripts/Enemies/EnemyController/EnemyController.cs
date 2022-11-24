@@ -18,8 +18,8 @@ public class EnemyController : MonoBehaviour
     }
     void Update()
     {
-        ControllerOfEnemyHealthe controllerOfEnemyHealthe = new ControllerOfEnemyHealthe();
-        controllerOfEnemyHealthe.ShouldDie(gameObject, _dataOfEnemies);
+        HealtheAndShieldController healtheAndShieldController = new HealtheAndShieldController();
+        healtheAndShieldController.CheckHealtheAndShield(_dataOfEnemies.Healthe, _dataOfEnemies.Shield, gameObject, false);
         AIMoverController Movecontroller = new AIMoverController();
         Movecontroller.Move(ref _isOnTarget, ref _target, gameObject, _dataOfEnemies.Player, _dataOfEnemies, _agent);
     }
