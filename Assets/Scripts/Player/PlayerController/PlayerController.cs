@@ -27,11 +27,19 @@ namespace Controllers
         {
             _lookAt.LookAtCursor(_playerData, _playerShip);
             _mouseController.InputController(_playerData);
-            _healtheAndShieldController.CheckHealtheAndShield(_playerData.Health, _playerData.Shield, gameObject, true);
+            if(!_healtheAndShieldController.CheckHealtheAndShield(_playerData.Health, _playerData.Shield, gameObject, true))
+            {
+                Time.timeScale = 0;
+                Destroy(gameObject);
+
+            }
         }
         private void FixedUpdate()
         {
-            _keyboardController.InputController(_playerData, _playerShip);
+            if(_keyboardController.InputController(_playerData, _playerShip))
+            {
+
+            }
         }
 
 

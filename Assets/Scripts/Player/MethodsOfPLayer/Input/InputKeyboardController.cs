@@ -6,14 +6,16 @@ namespace InputDeviceControllers
 {
     public class InputKeyboardController
     {
-        public void InputController(PlayerData playerData, GameObject playerShip)
+        public bool InputController(PlayerData playerData, GameObject playerShip)
         {
 
             if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
             {
                 MovePlayer movePlayer = new MovePlayer();
                 movePlayer.Movement(_movementVector, playerData, playerShip);
+                return true;
             }
+            return false;
         }
         private Vector3 _movementVector
         {

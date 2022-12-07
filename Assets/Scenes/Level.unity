@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.041417845, g: 0.047650456, b: 0.028161092, a: 1}
+  m_IndirectSpecularColor: {r: 0.041417852, g: 0.04765042, b: 0.028161062, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7356,7 +7356,6 @@ GameObject:
   - component: {fileID: 375531635}
   - component: {fileID: 375531629}
   - component: {fileID: 375531627}
-  - component: {fileID: 375531638}
   - component: {fileID: 375531636}
   - component: {fileID: 375531637}
   m_Layer: 8
@@ -7448,6 +7447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cursor: {fileID: 1402968323}
+  _particleObjects: []
   _positionAroundPlayer:
   - {fileID: 1512998869}
   - {fileID: 1972000152}
@@ -7541,19 +7541,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: f24986c5005449f4e96046f5edb103a7, type: 3}
---- !u!114 &375531638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375531621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aca68f83373b3b4f8dc65e94a04152d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movingSound: {fileID: 1501250824}
 --- !u!1 &378237438
 GameObject:
   m_ObjectHideFlags: 0
@@ -23230,7 +23217,7 @@ GameObject:
   - component: {fileID: 1317327902}
   - component: {fileID: 1317327901}
   m_Layer: 7
-  m_Name: The border
+  m_Name: borders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34385,6 +34372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit

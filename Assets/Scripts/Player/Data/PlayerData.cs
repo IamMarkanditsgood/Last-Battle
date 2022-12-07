@@ -8,6 +8,7 @@ namespace ShipData
     {
         public static PlayerData instance;
         [SerializeField] private GameObject _cursor;
+        [SerializeField] private List<GameObject> _particleObjects;
         [SerializeField] private List<Transform> _positionAroundPlayer;
         [SerializeField] private List<GameObject> _guns;
         [SerializeField] private List<GameObject> _abilities;
@@ -39,7 +40,20 @@ namespace ShipData
         {
             get { return _cursor; }
         }
+        public List<GameObject> ParticleList { get { return _particleObjects; } }
+        public GameObject GetParticleObject(ETypeOfEffect eTypeOfEffect)
+        {
+            for(int i = 0; i < _particleObjects.Count; i++)
+            {
+                if (_particleObjects[i].GetComponent<EffectObjData>().TypeOfEffect == eTypeOfEffect)
+                {
+                    return _particleObjects[i];
+                }
 
+            }
+            print("Error: You have not this Effect in data of enemy!");
+            return null;
+        }
         public List<GameObject> TakeListOfGuns()
         {
             return _guns;

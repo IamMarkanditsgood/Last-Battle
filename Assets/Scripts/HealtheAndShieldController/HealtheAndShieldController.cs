@@ -4,23 +4,24 @@ using UnityEngine;
 using ShipData;
 public class HealtheAndShieldController
 {
-    public void CheckHealtheAndShield(float healthe, float shield, GameObject ship, bool isPlayer)
+    public bool CheckHealtheAndShield(float healthe, float shield, GameObject ship, bool isPlayer)
     {
         if (isPlayer)
         {
             if (healthe <= 0)
             {
-                Time.timeScale = 0;
-                Object.Destroy(ship);
+                
+                return false;
             }
         }
         else
         {
             if (healthe <= 0)
             {
-                ship.SetActive(false);
+                return false;
             }
         }
+        return true;
     }
     public void TakeDamage(GameObject ship, float damage, bool isPlayer)
     {
