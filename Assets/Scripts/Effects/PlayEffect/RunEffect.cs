@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class RunEffect
 {
-    public void PlayEffect(List<ParticleSystem> particleSystems)
+    public void PlayEffect(GameObject effectObj)
     {
-        for(int i =0; i< particleSystems.Count;i++)
+        EffectObjData effectObjData = effectObj.GetComponent<EffectObjData>();
+        for(int i =0; i< effectObjData.ParticleSystemsList.Count;i++)
         {
-            particleSystems[i].Play();
+            effectObjData.ParticleSystemsList[i].Play();
         }
     }
-    public void StopEffect(List<ParticleSystem> particleSystems) 
+    public void StopEffect(GameObject effectObj) 
     {
-        for (int i = 0; i < particleSystems.Count; i++)
+        EffectObjData effectObjData = effectObj.GetComponent<EffectObjData>();
+        for (int i = 0; i < effectObjData.ParticleSystemsList.Count; i++)
         {
-            particleSystems[i].Stop();
+            effectObjData.ParticleSystemsList[i].Stop();
         }
     }
 }

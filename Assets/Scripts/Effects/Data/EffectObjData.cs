@@ -11,4 +11,6 @@ public class EffectObjData : MonoBehaviour
     {
         get { return _typeOfEffect; }
     }
+    public List<ParticleSystem> ParticleSystemsList
+    { get { return _particleSystems; } }
 }
