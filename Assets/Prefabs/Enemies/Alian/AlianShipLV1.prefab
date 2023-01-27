@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 1
   _typeOfAIbrain: 0
   _player: {fileID: 0}
   _positionBehindShip: {fileID: 180915972288517248}
@@ -250,6 +251,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7515464323532304635}
     m_Modifications:
+    - target: {fileID: 1462782213855637348, guid: 1dfa3763af24b08408f62a719707888d, type: 3}
+      propertyPath: _firstDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462782213855637348, guid: 1dfa3763af24b08408f62a719707888d, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1462782213857406394, guid: 1dfa3763af24b08408f62a719707888d, type: 3}
       propertyPath: m_RootOrder
       value: 0

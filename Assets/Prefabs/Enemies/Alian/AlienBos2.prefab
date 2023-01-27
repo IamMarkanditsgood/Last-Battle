@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 1
   _typeOfAIbrain: 2
   _player: {fileID: 0}
   _positionBehindShip: {fileID: 4845755219489621922}

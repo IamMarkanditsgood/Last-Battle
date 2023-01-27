@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 1
   _typeOfAIbrain: 0
   _player: {fileID: 0}
   _positionBehindShip: {fileID: 1604762687570956884}
@@ -300,6 +301,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: AutoGun1
       objectReference: {fileID: 0}
+    - target: {fileID: 3369472251881887132, guid: 91c35fb7ac53b8141a72f4315f41ec92, type: 3}
+      propertyPath: _firstDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369472251881887132, guid: 91c35fb7ac53b8141a72f4315f41ec92, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c35fb7ac53b8141a72f4315f41ec92, type: 3}
 --- !u!1 &2409529994685185725 stripped
@@ -366,6 +375,14 @@ PrefabInstance:
     - target: {fileID: 3369472251878918559, guid: 91c35fb7ac53b8141a72f4315f41ec92, type: 3}
       propertyPath: m_Name
       value: AutoGun1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369472251881887132, guid: 91c35fb7ac53b8141a72f4315f41ec92, type: 3}
+      propertyPath: _firstDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369472251881887132, guid: 91c35fb7ac53b8141a72f4315f41ec92, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c35fb7ac53b8141a72f4315f41ec92, type: 3}

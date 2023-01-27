@@ -110,8 +110,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _typeOfGun: 4
+  _typeOfSound: 7
   _positionsForShooting: {fileID: 3672034021604341313}
   _bullet: {fileID: 0}
+  _particleObjects: []
   _damageIndex: 1
   _damage: 10
   _firstDamage: 0

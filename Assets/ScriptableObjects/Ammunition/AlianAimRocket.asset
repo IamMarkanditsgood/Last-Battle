@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1a2627d0d812347af4c6da083c4efc, type: 3}
   m_Name: AlianAimRocket
   m_EditorClassIdentifier: 
+  _typeOfProjectile: 0
+  _typeOfEffect: 7
+  _typeOfSound: 20
   _material: {fileID: 0}
   _mesh: {fileID: 0}
-  _damage: 10
   _speed: 20
   _lifeTime: 10
+  _sizeOfCollider: 2
   _size: {x: 0.1, y: 0.1, z: 0.1}
   _particles: {fileID: 7442183130224065834, guid: 71e0a0bf92536d247880585dbedfbb8e, type: 3}

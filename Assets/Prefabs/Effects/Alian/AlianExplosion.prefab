@@ -9414,6 +9414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 508192285005743332}
+  - component: {fileID: 593977669474262437}
   m_Layer: 0
   m_Name: AlianExplosion
   m_TagString: Untagged
@@ -9440,6 +9441,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &593977669474262437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508192285005650116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 901e0dc8b041eeb47b31308d94d7a817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _typeOfEffect: 5
+  _particleSystems:
+  - {fileID: 508192284990538144}
+  - {fileID: 508192284990538150}
+  - {fileID: 508192284990538148}
+  - {fileID: 508192284990538146}
 --- !u!1 &508192285005650118
 GameObject:
   m_ObjectHideFlags: 0
