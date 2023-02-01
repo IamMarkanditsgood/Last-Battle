@@ -6,7 +6,7 @@ public enum ETypeOfSound
 {
     PlayerEngine,
 
-    InnertialShot,
+    InertialShot,
     RocketShoot,
     AimRocketShot,
     AlianRocketAimShot,
@@ -28,4 +28,6 @@ public enum ETypeOfSound
     QuantumExplosion,
     RocketExplosion,
     ZergAlianRocketExplosion,
+
+    None,
 }

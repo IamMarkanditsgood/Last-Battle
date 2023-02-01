@@ -13,13 +13,12 @@ public class TouchingObjects
         if (collision.gameObject.layer == LayerMask.NameToLayer("Meteorite"))
         {
             CleanPrefab cleanPrefab = new CleanPrefab();
-            effectController.UseExplosionEffect(dataOfProjectile.ScriptableObjects.TypeOfEffect, bullet);
+            effectController.UseExplosionEffect(dataOfProjectile.ScriptableObjects.TypeOfEffect, bullet.transform);
             soundsController.UseExplosionSound(dataOfProjectile.ScriptableObjects.TypeOfSound, bullet);
             cleanPrefab.CleanProjectile(bullet);
             bullet.SetActive(false);
             
         }
-        
         else if (bullet.layer != collision.gameObject.layer)
         {
             if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
@@ -31,7 +30,7 @@ public class TouchingObjects
                 healtheAndShieldController.TakeDamage(collision.gameObject, damage, false);
                 cleanPrefab.CleanProjectile(bullet);
                 bullet.SetActive(false);
-                effectController.UseExplosionEffect(dataOfProjectile.ScriptableObjects.TypeOfEffect, bullet);
+                effectController.UseExplosionEffect(dataOfProjectile.ScriptableObjects.TypeOfEffect, bullet.transform);
                 soundsController.UseExplosionSound(dataOfProjectile.ScriptableObjects.TypeOfSound, bullet);
             }
             else if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
@@ -43,7 +42,7 @@ public class TouchingObjects
                 healtheAndShieldController.TakeDamage(collision.gameObject, damage, true);
                 cleanPrefab.CleanProjectile(bullet);
                 bullet.SetActive(false);
-                effectController.UseExplosionEffect(dataOfProjectile.ScriptableObjects.TypeOfEffect, bullet);
+                effectController.UseExplosionEffect(dataOfProjectile.ScriptableObjects.TypeOfEffect, bullet.transform);
                 soundsController.UseExplosionSound(dataOfProjectile.ScriptableObjects.TypeOfSound, bullet);
             }
         }

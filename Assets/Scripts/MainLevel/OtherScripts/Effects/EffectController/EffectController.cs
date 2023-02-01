@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EffectController
 {
-    public void UseExplosionEffect(ETypeOfEffect eTypeOfEffect, GameObject explosionPoint)
+    public void UseExplosionEffect(ETypeOfEffect eTypeOfEffect, Transform explosionPoint)
     {
 
         ObjectsComposition objectsComposition = ObjectsComposition.Instance;
         GameObject effect = objectsComposition.GetEffect(eTypeOfEffect);
 
         effect.transform.position = explosionPoint.transform.position;
+        effect.transform.rotation = explosionPoint.rotation;
         effect.SetActive(true);
         effect.AddComponent<cleaner>();
     }
@@ -27,7 +28,6 @@ public class EffectController
             effect.SetActive(true);
             
             effect.transform.SetParent(pointForEffect[i].transform);
-            Debug.Log(curentEngineEffect);
             curentEngineEffect.Add(effect);
             
         }

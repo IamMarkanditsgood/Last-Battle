@@ -65,6 +65,8 @@ public class DataOfEnemies : AHealtheAndShield, IGanListOfShip
         _shield= value;
     }
 
+
+
     public float DistanceForShooting
     {
         get { return _distanceForShooting; }

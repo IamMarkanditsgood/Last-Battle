@@ -9409,7 +9409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901e0dc8b041eeb47b31308d94d7a817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typeOfEffect: 10
+  _typeOfEffect: 19
   _particleSystems:
   - {fileID: 19800002}
   - {fileID: 19800006}

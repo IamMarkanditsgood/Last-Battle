@@ -5,9 +5,11 @@ using static UnityEngine.Rendering.DebugUI;
 
 namespace ShipData
 {
-    public class PlayerData : AHealtheAndShield, IGanListOfShip, IAbilitiesOfShip 
+    public class PlayerData : AHealtheAndShield, IGanListOfShip, IAbilitiesOfShip
     {
         public static PlayerData instance;
+
+
         [SerializeField] private GameObject _cursor;
         [SerializeField] private List<Transform> _positionAroundPlayer;
         [SerializeField] private List<GameObject> _guns;
@@ -18,15 +20,13 @@ namespace ShipData
         [SerializeField] private float _health;
         [SerializeField] private float _shield;
 
-    
-
         private Rigidbody _rigidbody;
-
+        private LevelData _levelData = LevelData.instance;
         private void Awake()
         {
             instance = this;
             _rigidbody = GetComponent<Rigidbody>();
-   
+          
         }
 
         public Rigidbody Rigidbody
@@ -73,5 +73,6 @@ namespace ShipData
         {
             _shield = value;
         }
+
     }
 }

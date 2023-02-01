@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sight : MonoBehaviour
 {
-    void FixedUpdate()
+    void LateUpdate()
     {
         Vector3 pointScrin = Camera.main.WorldToScreenPoint(gameObject.transform.position);
         transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, pointScrin.z));

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: QuantumBall
   m_EditorClassIdentifier: 
   _typeOfProjectile: 1
-  _typeOfEffect: 14
+  _typeOfEffect: 23
   _typeOfSound: 18
   _material: {fileID: 0}
   _mesh: {fileID: 0}

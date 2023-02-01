@@ -9,7 +9,6 @@ public class EnemyController : MonoBehaviour
     private ObjectsComposition _objectsComposition = ObjectsComposition.Instance;
     private DataOfEnemies _dataOfEnemies;
     private LookAtPlayer _lookAtPlayer = new LookAtPlayer();
-    private RunEffect _runEffect = new RunEffect();
     private bool _isOnTarget = true;
     private Vector3 _target;
     private NavMeshAgent _agent;

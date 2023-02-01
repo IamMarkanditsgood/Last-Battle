@@ -17,7 +17,6 @@ namespace Controllers
         private InputMouseController _mouseController = new InputMouseController();
         private LookAtTheSight _lookAt = new LookAtTheSight();
         private HealtheAndShieldController _healtheAndShieldController = new HealtheAndShieldController();
-        private RunEffect _runEffect = new RunEffect();
         private UILevelController _uiLevelController = new UILevelController();
         private EffectController effectController;
         private GameObject _playerShip;
@@ -44,7 +43,7 @@ namespace Controllers
             {
                 gameObject.GetComponent<MeshRenderer>().enabled = false;
                 EffectController effectController = new EffectController();
-                effectController.UseExplosionEffect(ETypeOfEffect.PlayerDeath, gameObject);
+                effectController.UseExplosionEffect(ETypeOfEffect.PlayerDeath, gameObject.transform);
                 GameObject sound;
                 _objectsComposition = ObjectsComposition.Instance;
                 sound = _objectsComposition.GetSound(ETypeOfSound.PlayerDeath);
@@ -65,7 +64,6 @@ namespace Controllers
 
                 
                 effectController.RunEngineEffect(ETypeOfEffect.PlayerEngine, _playerData.Engines,ref _curentEngineEffect );
-                print("³â³â");
                 _objectsComposition = ObjectsComposition.Instance;
                 
                 _curentEngineSound = _objectsComposition.GetSound(ETypeOfSound.PlayerEngine);

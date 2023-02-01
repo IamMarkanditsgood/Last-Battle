@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AimRocket
   m_EditorClassIdentifier: 
   _typeOfProjectile: 0
-  _typeOfEffect: 15
+  _typeOfEffect: 24
   _typeOfSound: 19
   _material: {fileID: 2100000, guid: e494807fe98891c4dba63bd86cc64aea, type: 2}
   _mesh: {fileID: 1836222553264194175, guid: 4ab581e06f3b88042b9154887d4c359e, type: 3}

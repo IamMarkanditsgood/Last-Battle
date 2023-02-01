@@ -12,8 +12,18 @@ public enum ETypeOfEffect
     ImperialShipDeath,
     AlianShipDeath,
 
-    Shoot,
-    
+    AlianRocketsShot,
+    AutogunShot,
+    InertialShot,
+    LightBlueShot,
+    LightGreenShot,
+    PlasmaBuletsShot,
+    PlasmaShot,
+    QuantumShot,
+    RocketsShot,
+    LazerShot,
+
+
     AlianRocketsExplosion,
     AutogunExplosion,
     CannonExplosion,
@@ -23,4 +33,6 @@ public enum ETypeOfEffect
     PlasmaExplosion,
     QuantumExplosion,
     RocketsExplosion,
+
+    None,
 }

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using CreatingAnObjects;
 
@@ -8,7 +7,6 @@ public class ShootFromGun : MonoBehaviour, IStandardShoot
     private DataOfGun _dataOfGun;
     private Coroutine _coroutine;
     private ObjectsComposition _objectsComposition = ObjectsComposition.Instance;
-    private RunEffect _runEffect = new RunEffect();
     private void Awake()
     {
         _dataOfGun = GetComponent<DataOfGun>(); 
@@ -20,15 +18,8 @@ public class ShootFromGun : MonoBehaviour, IStandardShoot
             GameObject bullet = GetObject();
             if (bullet != null)
             {
-                if(_dataOfGun.GetParticleObject(ETypeOfEffect.Shoot))
-                {
-                    _runEffect.PlayEffect(_dataOfGun.GetParticleObject(ETypeOfEffect.Shoot));
-                }
-                _objectsComposition = ObjectsComposition.Instance;
-
-                GameObject soundObj = _objectsComposition.GetSound(_dataOfGun.TypeOfSound);
-                soundObj.SetActive(true);
-                soundObj.AddComponent<cleaner>();
+                UseShotEffect();
+                UseShotSound();
                 bullet.transform.position = _dataOfGun.PositionForSooting.position;
                 bullet.transform.rotation = _dataOfGun.PositionForSooting.rotation;
                 bullet.SetActive(true);
@@ -69,6 +60,23 @@ public class ShootFromGun : MonoBehaviour, IStandardShoot
         _dataOfGun.IsCharged = true;
         StopCoroutine(_coroutine);
     }
-
+    private void UseShotEffect()
+    {
+        EffectController effectController = new EffectController();
+        if (_dataOfGun.TypeOfShotEffect != ETypeOfEffect.None)
+        {
+            effectController.UseExplosionEffect(_dataOfGun.TypeOfShotEffect, _dataOfGun.PositionForSooting);
+        }
+    }
+    private void UseShotSound()
+    {
+        if (_dataOfGun.TypeOfSound != ETypeOfSound.None)
+        {
+            _objectsComposition = ObjectsComposition.Instance;
+            GameObject soundObj = _objectsComposition.GetSound(_dataOfGun.TypeOfSound);
+            soundObj.SetActive(true);
+            soundObj.AddComponent<cleaner>();
+        }
+    }
 
 }

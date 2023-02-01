@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AlianAimRocket
   m_EditorClassIdentifier: 
   _typeOfProjectile: 0
-  _typeOfEffect: 7
+  _typeOfEffect: 16
   _typeOfSound: 20
   _material: {fileID: 0}
   _mesh: {fileID: 0}

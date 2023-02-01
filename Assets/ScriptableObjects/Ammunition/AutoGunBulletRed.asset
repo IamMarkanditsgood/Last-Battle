@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AutoGunBulletRed
   m_EditorClassIdentifier: 
   _typeOfProjectile: 1
-  _typeOfEffect: 8
+  _typeOfEffect: 17
   _typeOfSound: 15
   _material: {fileID: 2100000, guid: 62ae78ff12a4cf3498d4e267ceab96d0, type: 2}
   _mesh: {fileID: 4300000, guid: ff419cf9e460bab428084b82c5ac3d92, type: 3}

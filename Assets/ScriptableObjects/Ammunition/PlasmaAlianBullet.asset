@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlasmaAlianBullet
   m_EditorClassIdentifier: 
   _typeOfProjectile: 1
-  _typeOfEffect: 12
+  _typeOfEffect: 22
   _typeOfSound: 17
   _material: {fileID: 0}
   _mesh: {fileID: 0}

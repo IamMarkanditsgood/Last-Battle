@@ -4913,7 +4913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901e0dc8b041eeb47b31308d94d7a817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typeOfEffect: 12
+  _typeOfEffect: 21
   _particleSystems:
   - {fileID: 3940036432990661940}
   - {fileID: 3940036432548431227}

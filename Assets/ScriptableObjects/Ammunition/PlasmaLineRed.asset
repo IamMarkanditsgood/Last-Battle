@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlasmaLineRed
   m_EditorClassIdentifier: 
   _typeOfProjectile: 1
-  _typeOfEffect: 13
+  _typeOfEffect: 21
   _typeOfSound: 17
   _material: {fileID: 0}
   _mesh: {fileID: 0}
