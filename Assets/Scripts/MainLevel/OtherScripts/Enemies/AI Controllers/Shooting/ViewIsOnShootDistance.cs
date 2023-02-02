@@ -15,7 +15,9 @@ public class ViewIsOnShootDistance
     }
     private void UseGans(ref GameObject thisShip)
     {
-        
+        List<GameObject> list = new List<GameObject>();
+        list.Add(LevelData.instance.Player);
+        thisShip.GetComponent<IGetListOfEnemy>().SetEnemyOfThisShip(list);
         DataOfEnemies dataOfEnemie = thisShip.GetComponent<DataOfEnemies>();
         List<GameObject> gunList = dataOfEnemie.GunList;
         for(int i=0; i < gunList.Count; i++)

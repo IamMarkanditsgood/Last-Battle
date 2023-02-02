@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataOfEnemies : AHealtheAndShield, IGanListOfShip
+public class DataOfEnemies : AHealtheAndShield, IGanListOfShip, IGetListOfEnemy
 {
     [SerializeField] private ERacesOfShips _raceOfShip;
     [SerializeField] private ETypeOfAIBrain _typeOfAIbrain;
@@ -18,8 +18,11 @@ public class DataOfEnemies : AHealtheAndShield, IGanListOfShip
     [SerializeField] private float _distanceForUsingAiAlgor;
     [SerializeField] private LayerMask _layerMaskOfEnemy;
 
+    private List<GameObject> _listOfShipsEnemies = new List<GameObject>();
+
     private void OnEnable()
     {
+        _listOfShipsEnemies.Add(_player);
         _healthe = _scriptableObject.Health * _healtheIndex;
         _shield = _scriptableObject.Shield * _shieldIndex;
     }
@@ -65,8 +68,14 @@ public class DataOfEnemies : AHealtheAndShield, IGanListOfShip
         _shield= value;
     }
 
-
-
+    public List<GameObject> GetEnemyOfThisShip()
+    {
+        return _listOfShipsEnemies;
+    }
+    public void SetEnemyOfThisShip(List<GameObject> value)
+    {
+        _listOfShipsEnemies = value;
+    }
     public float DistanceForShooting
     {
         get { return _distanceForShooting; }

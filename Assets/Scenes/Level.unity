@@ -906,7 +906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 45424345}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2745,7 +2745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 135938779}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PositionForShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3169,7 +3169,7 @@ GameObject:
   - component: {fileID: 142366818}
   - component: {fileID: 142366820}
   - component: {fileID: 142366819}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: AlianBasicRocket2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3591,7 +3591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 159242782}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PositionsForAIBrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5425,7 +5425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 249599901}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PositionForShoot
   m_TagString: Untagged
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
@@ -7013,7 +7013,6 @@ Transform:
   - {fileID: 1968600100}
   - {fileID: 237177239}
   - {fileID: 1608287392}
-  - {fileID: 842239828}
   - {fileID: 1669680115}
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -7285,7 +7284,7 @@ GameObject:
   - component: {fileID: 336723400}
   - component: {fileID: 336723402}
   - component: {fileID: 336723401}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7501,7 +7500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 352356100}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Abilities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8082,7 +8081,7 @@ GameObject:
   - component: {fileID: 375531627}
   - component: {fileID: 375531636}
   - component: {fileID: 375531637}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8211,6 +8210,7 @@ MonoBehaviour:
   _maxSpeed: 15
   _health: 100
   _shield: 100
+  _listOfShipsEnemies: []
 --- !u!54 &375531629
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8417,7 +8417,7 @@ GameObject:
   - component: {fileID: 378972528}
   - component: {fileID: 378972530}
   - component: {fileID: 378972529}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: AlianLightBallGun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9338,7 +9338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433417947}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: EnginePoint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9761,7 +9761,7 @@ GameObject:
   - component: {fileID: 474970989}
   - component: {fileID: 474970991}
   - component: {fileID: 474970990}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: gGUN02_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10490,7 +10490,7 @@ GameObject:
   - component: {fileID: 509068589}
   - component: {fileID: 509068591}
   - component: {fileID: 509068590}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: gGUN02_ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11428,7 +11428,7 @@ GameObject:
   - component: {fileID: 565947584}
   - component: {fileID: 565947583}
   - component: {fileID: 565947582}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: AutoGun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11954,7 +11954,7 @@ GameObject:
   - component: {fileID: 580126011}
   - component: {fileID: 580126013}
   - component: {fileID: 580126012}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: gGUN03_core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12741,7 +12741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 625612401}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12909,7 +12909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 632969485}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: RightSide
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -14002,7 +14002,7 @@ GameObject:
   - component: {fileID: 707638816}
   - component: {fileID: 707638815}
   - component: {fileID: 707638819}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: BasicRocketGun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17093,51 +17093,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836069029}
   m_CullTransparentMesh: 1
---- !u!1 &842239826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 842239828}
-  - component: {fileID: 842239827}
-  m_Layer: 0
-  m_Name: CreationController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &842239827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842239826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8eaf44d46b01db4d81e02296afc0cab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _levelData: {fileID: 1968600099}
---- !u!4 &842239828
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842239826}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -950.42444, y: -562.2598, z: 140.88565}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 317569152}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844502881
 GameObject:
   m_ObjectHideFlags: 0
@@ -21025,7 +20980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1019302860}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -21865,7 +21820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1066675206}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22208,7 +22163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1082659303}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Engines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22650,7 +22605,7 @@ GameObject:
   - component: {fileID: 1118852620}
   - component: {fileID: 1118852619}
   - component: {fileID: 1118852621}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ShotGun1
   m_TagString: InertialCanon
   m_Icon: {fileID: 0}
@@ -22989,7 +22944,7 @@ GameObject:
   - component: {fileID: 1163054738}
   - component: {fileID: 1163054737}
   - component: {fileID: 1163054739}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ShotGun2
   m_TagString: InertialCanon
   m_Icon: {fileID: 0}
@@ -26008,7 +25963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1346100929}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PositionForShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26668,7 +26623,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1385997635}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: EnginePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26795,7 +26750,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1407275498}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27235,7 +27190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1430944370}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PositionForShoot
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -28065,7 +28020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1512998869}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -28233,7 +28188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1516064247}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ShootingPosition
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -29011,7 +28966,7 @@ GameObject:
   - component: {fileID: 1560127742}
   - component: {fileID: 1560127741}
   - component: {fileID: 1560127743}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: LaserGun
   m_TagString: InertialCanon
   m_Icon: {fileID: 0}
@@ -29242,7 +29197,7 @@ GameObject:
   - component: {fileID: 1560652868}
   - component: {fileID: 1560652870}
   - component: {fileID: 1560652869}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: bGUN02_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30019,7 +29974,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1611506294}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: EnginePoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30189,7 +30144,7 @@ GameObject:
   - component: {fileID: 1613603810}
   - component: {fileID: 1613603809}
   - component: {fileID: 1613603808}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PlasmaGun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31916,7 +31871,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 317569152}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1669680116
 MonoBehaviour:
@@ -32717,7 +32672,7 @@ GameObject:
   - component: {fileID: 1698873062}
   - component: {fileID: 1698873064}
   - component: {fileID: 1698873063}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: gGUN02_action
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33067,7 +33022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1723495590}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PositionForShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34638,7 +34593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1821317581}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34810,7 +34765,7 @@ GameObject:
   - component: {fileID: 1829206249}
   - component: {fileID: 1829206251}
   - component: {fileID: 1829206250}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: bGUN02_ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34990,7 +34945,7 @@ GameObject:
   - component: {fileID: 1841133556}
   - component: {fileID: 1841133558}
   - component: {fileID: 1841133557}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: gGUN03_cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35976,7 +35931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1915235253}
   - component: {fileID: 1915235254}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Teleporter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36563,7 +36518,7 @@ GameObject:
   - component: {fileID: 1932273975}
   - component: {fileID: 1932273974}
   - component: {fileID: 1932273973}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: LightBallGun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36681,7 +36636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1933284070}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -36782,7 +36737,7 @@ GameObject:
   - component: {fileID: 1940970634}
   - component: {fileID: 1940970636}
   - component: {fileID: 1940970635}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: AlianAimRocketGun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37676,7 +37631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1972000152}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: LeftSide
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -38232,7 +38187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1989422691}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -39717,7 +39672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2074312127}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PositionForShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40692,7 +40647,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2115770922}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: EnginePoint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41263,8 +41218,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 376536504382182640, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 376536505353807622, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 375531621}
     - target: {fileID: 376536505353807622, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
       propertyPath: _firstDamage
       value: 10
@@ -41327,11 +41286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 376536505353807628, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 376536505353807628, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3592519205780584246, guid: 6562e7e6d4b575a4ba2e2ee04812a9e3, type: 3}
       propertyPath: m_Layer
@@ -41379,7 +41338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1624703405331580573, guid: b346223ffd644b5458b93ca552301745, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1624703405886253957, guid: b346223ffd644b5458b93ca552301745, type: 3}
       propertyPath: _bullet
@@ -41407,7 +41366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1624703405886253958, guid: b346223ffd644b5458b93ca552301745, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1624703405886253958, guid: b346223ffd644b5458b93ca552301745, type: 3}
       propertyPath: m_IsActive
@@ -41574,7 +41533,7 @@ MonoBehaviour:
   _timeRechargeIndex: 1
   _recharge: 2
   _firstRechargeTime: 2
-  _gunOwner: {fileID: 0}
+  _gunOwner: {fileID: 375531621}
 --- !u!23 &1797081260974599496
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41654,13 +41613,13 @@ GameObject:
   - component: {fileID: 1797081260974599496}
   - component: {fileID: 1797081260974599494}
   - component: {fileID: 1797081260974599495}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: InertialCanon2
   m_TagString: InertialCanon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1797081262215175857
 GameObject:
   m_ObjectHideFlags: 0
@@ -41670,7 +41629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797081262215175886}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -41711,11 +41670,11 @@ MonoBehaviour:
   _bullet: {fileID: 11400000, guid: 601928132bf56a04dbae71fc3f452210, type: 2}
   _damageIndex: 1
   _damage: 30
-  _firstDamage: 0
+  _firstDamage: 30
   _timeRechargeIndex: 1
   _recharge: 3
-  _firstRechargeTime: 0
-  _gunOwner: {fileID: 0}
+  _firstRechargeTime: 0.1
+  _gunOwner: {fileID: 375531621}
 --- !u!114 &1903339469092552205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41757,7 +41716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2529252782802836361, guid: b6debf237dd3e784aa0efdd704427cf9, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4495785794235330502, guid: b6debf237dd3e784aa0efdd704427cf9, type: 3}
       propertyPath: m_Layer
@@ -41813,7 +41772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5454598728487566427, guid: b6debf237dd3e784aa0efdd704427cf9, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5454598728487566427, guid: b6debf237dd3e784aa0efdd704427cf9, type: 3}
       propertyPath: m_IsActive
@@ -41906,7 +41865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2312754156743278058, guid: b6692326ec155e1478d61f17ac1cd198, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2312754156743278058, guid: b6692326ec155e1478d61f17ac1cd198, type: 3}
       propertyPath: m_IsActive
@@ -41914,15 +41873,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764986103072647275, guid: b6692326ec155e1478d61f17ac1cd198, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2764986104407830584, guid: b6692326ec155e1478d61f17ac1cd198, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6150897946730117964, guid: b6692326ec155e1478d61f17ac1cd198, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7175118838553424481, guid: b6692326ec155e1478d61f17ac1cd198, type: 3}
       propertyPath: _typeOfShotEffect
@@ -41930,7 +41889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7381314820159130302, guid: b6692326ec155e1478d61f17ac1cd198, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6692326ec155e1478d61f17ac1cd198, type: 3}
@@ -41957,7 +41916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555653728923704284, guid: 04667086a0c553c4a82aab9737cdc007, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6731786505064909717, guid: 04667086a0c553c4a82aab9737cdc007, type: 3}
       propertyPath: m_Name
@@ -41965,7 +41924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6731786505064909717, guid: 04667086a0c553c4a82aab9737cdc007, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6731786505064909717, guid: 04667086a0c553c4a82aab9737cdc007, type: 3}
       propertyPath: m_IsActive
@@ -42038,11 +41997,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3672034021604341312, guid: d7e132ea428cb174783124280b9c6f88, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3672034021952727977, guid: d7e132ea428cb174783124280b9c6f88, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5605992090582283533, guid: d7e132ea428cb174783124280b9c6f88, type: 3}
       propertyPath: m_Enabled
@@ -42146,7 +42105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5605992090584280009, guid: d7e132ea428cb174783124280b9c6f88, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5605992090584280009, guid: d7e132ea428cb174783124280b9c6f88, type: 3}
       propertyPath: m_IsActive
@@ -42154,11 +42113,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5605992090584280011, guid: d7e132ea428cb174783124280b9c6f88, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5605992090584280013, guid: d7e132ea428cb174783124280b9c6f88, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5605992090584280015, guid: d7e132ea428cb174783124280b9c6f88, type: 3}
       propertyPath: m_IsActive
@@ -42220,13 +42179,13 @@ GameObject:
   - component: {fileID: 7092159159041067102}
   - component: {fileID: 1903339469092552205}
   - component: {fileID: 1903339469092552204}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: AimRockets2
   m_TagString: AimRocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &5528152402543220073
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -42452,7 +42411,7 @@ GameObject:
   - component: {fileID: 5528152402546120009}
   - component: {fileID: 5528152402543220075}
   - component: {fileID: 5528152402544220075}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42470,7 +42429,7 @@ GameObject:
   - component: {fileID: 5528152402546120011}
   - component: {fileID: 5528152402546149742}
   - component: {fileID: 5528152402546149740}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: LaserGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42500,7 +42459,7 @@ GameObject:
   - component: {fileID: 5528152402546120013}
   - component: {fileID: 5528152402543220079}
   - component: {fileID: 5528152402544220079}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: lazer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42542,7 +42501,7 @@ GameObject:
   - component: {fileID: 5528152402546120015}
   - component: {fileID: 5528152402543220073}
   - component: {fileID: 5528152402544220073}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: GunTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42615,7 +42574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6001794531018441412, guid: 55776b2d4c1b71643902dd2c8362c5ca, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6001794531018441414, guid: 55776b2d4c1b71643902dd2c8362c5ca, type: 3}
       propertyPath: m_Name
@@ -42623,7 +42582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6001794531018441414, guid: 55776b2d4c1b71643902dd2c8362c5ca, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6001794531018441414, guid: 55776b2d4c1b71643902dd2c8362c5ca, type: 3}
       propertyPath: m_IsActive
@@ -42631,7 +42590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6001794532116072035, guid: 55776b2d4c1b71643902dd2c8362c5ca, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6840045594488178624, guid: 55776b2d4c1b71643902dd2c8362c5ca, type: 3}
       propertyPath: m_Layer
@@ -42668,7 +42627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4353396601837776709}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: ShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -42689,15 +42648,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1867625905900598099, guid: c37ff05d67d3b004faedb63b9e71568c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2097205115719619045, guid: c37ff05d67d3b004faedb63b9e71568c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3128174644846780349, guid: c37ff05d67d3b004faedb63b9e71568c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3380942552897131920, guid: c37ff05d67d3b004faedb63b9e71568c, type: 3}
       propertyPath: _typeOfShotEffect
@@ -42749,11 +42708,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6975952749863282959, guid: c37ff05d67d3b004faedb63b9e71568c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6975952750397647242, guid: c37ff05d67d3b004faedb63b9e71568c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7881348143745505819, guid: c37ff05d67d3b004faedb63b9e71568c, type: 3}
       propertyPath: m_Name
@@ -42761,7 +42720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7881348143745505819, guid: c37ff05d67d3b004faedb63b9e71568c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7881348143745505819, guid: c37ff05d67d3b004faedb63b9e71568c, type: 3}
       propertyPath: m_IsActive
@@ -42786,7 +42745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3587433382607731674, guid: 278c0e35b3bf0df4482b83538b83e87a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5812829976767009311, guid: 278c0e35b3bf0df4482b83538b83e87a, type: 3}
       propertyPath: m_Layer
@@ -42798,7 +42757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6585455645823870595, guid: 278c0e35b3bf0df4482b83538b83e87a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6585455645823870595, guid: 278c0e35b3bf0df4482b83538b83e87a, type: 3}
       propertyPath: m_IsActive
@@ -42826,7 +42785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7063493844261770226, guid: 278c0e35b3bf0df4482b83538b83e87a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7063493844261770227, guid: 278c0e35b3bf0df4482b83538b83e87a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -42957,8 +42916,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 45424345}
     m_Modifications:
     - target: {fileID: 2180393522036813658, guid: 49da2620dcfd8d742b13f32c9e5af25b, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 375531621}
+    - target: {fileID: 2180393522036813658, guid: 49da2620dcfd8d742b13f32c9e5af25b, type: 3}
+      propertyPath: _firstDamage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180393522036813658, guid: 49da2620dcfd8d742b13f32c9e5af25b, type: 3}
       propertyPath: _typeOfShotEffect
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180393522036813658, guid: 49da2620dcfd8d742b13f32c9e5af25b, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3663700430747680668, guid: 49da2620dcfd8d742b13f32c9e5af25b, type: 3}
       propertyPath: m_RootOrder
@@ -43010,15 +42981,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4639799654401163240, guid: 49da2620dcfd8d742b13f32c9e5af25b, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4639799654401163240, guid: 49da2620dcfd8d742b13f32c9e5af25b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5986390577396913034, guid: 49da2620dcfd8d742b13f32c9e5af25b, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49da2620dcfd8d742b13f32c9e5af25b, type: 3}
@@ -43103,7 +43074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2515277928682911518, guid: 777967a84854b124cbc66e81b2d5a51b, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2515277928682911518, guid: 777967a84854b124cbc66e81b2d5a51b, type: 3}
       propertyPath: m_IsActive
@@ -43111,11 +43082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2552424741112261245, guid: 777967a84854b124cbc66e81b2d5a51b, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5522302353482182916, guid: 777967a84854b124cbc66e81b2d5a51b, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7290376729378146606, guid: 777967a84854b124cbc66e81b2d5a51b, type: 3}
       propertyPath: m_Color.b
@@ -43163,11 +43134,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8271334486071145071, guid: 777967a84854b124cbc66e81b2d5a51b, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8271334486101859092, guid: 777967a84854b124cbc66e81b2d5a51b, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 777967a84854b124cbc66e81b2d5a51b, type: 3}

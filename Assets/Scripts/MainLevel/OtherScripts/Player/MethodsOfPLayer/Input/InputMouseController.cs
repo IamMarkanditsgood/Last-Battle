@@ -10,6 +10,7 @@ namespace InputDeviceControllers
         {
             if (Input.GetMouseButtonDown(0))
             {
+                playerData.SetEnemyOfThisShip(LevelData.instance.ListOfEnemiesOnScene);
                 List<GameObject> listOfGuns = playerData.TakeListOfGuns();
                 for (int i = 0; i < listOfGuns.Count; i++)
                 {

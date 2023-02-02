@@ -1,15 +1,16 @@
 using UnityEngine;
 
-public class CreatingController : MonoBehaviour
+public class CreatingController
 {
-    [SerializeField] private LevelData _levelData;
     // можливо унаслідувати абстракцію від монобехейвора щоб можна було у інспекторі добавити їх у лист
-    private AFirstSpawn[] _firstSpawns = {new SpawnOfMeteorites(), new SpawnOfEnemys(), new SpawnOfProjectiles() , new SpawnOfEffects(), new SpawnOfSounds()};
-    void Start()
+
+
+    public void CreateScene()
     {
-       foreach(var firstSpawn in _firstSpawns)
-       {
-           firstSpawn.FirstSpawn();
-       }
+        AFirstSpawn[] _firstSpawns = { new SpawnOfMeteorites(), new SpawnOfEnemys(), new SpawnOfProjectiles(), new SpawnOfEffects(), new SpawnOfSounds() };
+        foreach (var firstSpawn in _firstSpawns)
+        {
+            firstSpawn.FirstSpawn();
+        }
     }
 }

@@ -19,7 +19,7 @@ public class TouchingObjects
             bullet.SetActive(false);
             
         }
-        else if (bullet.layer != collision.gameObject.layer)
+        else if (dataOfProjectile.OwnersShip.layer != collision.gameObject.layer)
         {
             if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
             {

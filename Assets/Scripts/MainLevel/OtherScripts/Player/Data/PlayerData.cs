@@ -5,7 +5,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 namespace ShipData
 {
-    public class PlayerData : AHealtheAndShield, IGanListOfShip, IAbilitiesOfShip
+    public class PlayerData : AHealtheAndShield, IGanListOfShip, IAbilitiesOfShip, IGetListOfEnemy
     {
         public static PlayerData instance;
 
@@ -20,15 +20,17 @@ namespace ShipData
         [SerializeField] private float _health;
         [SerializeField] private float _shield;
 
+
         private Rigidbody _rigidbody;
         private LevelData _levelData = LevelData.instance;
+        [SerializeField]private List<GameObject> _listOfShipsEnemies;
         private void Awake()
         {
+            
             instance = this;
             _rigidbody = GetComponent<Rigidbody>();
           
         }
-
         public Rigidbody Rigidbody
         {
             get { return _rigidbody; }
@@ -74,5 +76,13 @@ namespace ShipData
             _shield = value;
         }
 
+        public List<GameObject> GetEnemyOfThisShip()
+        {
+            return _listOfShipsEnemies;
+        }
+        public void SetEnemyOfThisShip(List<GameObject> value)
+        {
+            _listOfShipsEnemies = value;
+        }
     }
 }

@@ -710,6 +710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 0
   _typeOfAIbrain: 1
   _player: {fileID: 0}
   _positionBehindShip: {fileID: 7210403235343473379}
@@ -1541,6 +1542,10 @@ PrefabInstance:
       value: AutoGun1
       objectReference: {fileID: 0}
     - target: {fileID: 6873628892620230711, guid: 83650f6c3869009409ee8b316c809343, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 9064674067053741388}
+    - target: {fileID: 6873628892620230711, guid: 83650f6c3869009409ee8b316c809343, type: 3}
       propertyPath: _firstDamage
       value: 1
       objectReference: {fileID: 0}
@@ -1615,6 +1620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AutoGun1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6873628892620230711, guid: 83650f6c3869009409ee8b316c809343, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 9064674067053741388}
     - target: {fileID: 6873628892620230711, guid: 83650f6c3869009409ee8b316c809343, type: 3}
       propertyPath: _recharge
       value: 0.2

@@ -11,8 +11,9 @@ public class ProjectileController : MonoBehaviour
     private Coroutine _coroutine;
     private void Start()
     {
-        _dataOfProjectile = GetComponent<DataOfProjectile>();
         _projectileMover = GetMoverScript();
+        _dataOfProjectile = GetComponent<DataOfProjectile>();
+
     }
     private void FixedUpdate()
     {
@@ -24,7 +25,7 @@ public class ProjectileController : MonoBehaviour
     }
     private void OnEnable()
     {
-
+        _projectileMover = GetMoverScript();
         if (GetComponent<DataOfProjectile>().ScriptableObjects != null)
         {
 

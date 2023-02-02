@@ -1,3 +1,4 @@
+using ShipData;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class WaveController : MonoBehaviour
     {
         if (_levelData.CanSpawnOfEnemies)
         {
-            SpawnEnemy(_levelData, EEnemiesType.Level1, ERacesOfShips.Imperium, 3);
+            SpawnEnemy(_levelData, EEnemiesType.Level1, ERacesOfShips.Imperium, 1);
         }
     }
     private void Update()
@@ -28,6 +29,7 @@ public class WaveController : MonoBehaviour
                 _levelData.ShopArea.SetActive(true);
                 _isBattleTime = false;
                 StartCoroutine(TimeBetweenWaves(_levelData.TimeOfPeace));
+
 
             }
         }
@@ -109,6 +111,7 @@ public class WaveController : MonoBehaviour
     }
     private void StartNewWave(LevelData levelData)
     {
+
         switch (levelData.WaveOfEnemies)
         {
             case 1:
