@@ -11,8 +11,13 @@ public class AimRocket : IProjectileMover
         DataOfProjectile dataOfProjectile = projectile.GetComponent<DataOfProjectile>();
         if (dataOfProjectile.OwnersShip.GetComponent<IGetListOfEnemy>().GetEnemyOfThisShip().Count != 0)
         {
-            GameObject targetObj = GetTarget(projectile, dataOfProjectile);
-            projectile.transform.LookAt(targetObj.transform, Vector3.up);
+            dataOfProjectile.CurrentTarget = GetTarget(projectile, dataOfProjectile);
+        }
+        if (dataOfProjectile.OwnersShip.GetComponent<IGetListOfEnemy>().GetEnemyOfThisShip().Count != 0 && dataOfProjectile.CurrentTarget.activeInHierarchy)
+        {
+
+                    
+            projectile.transform.LookAt(dataOfProjectile.CurrentTarget.transform, Vector3.up);
             float speed = dataOfProjectile.ScriptableObjects.Speed;
             projectile.transform.Translate(Vector3.forward * speed * Time.deltaTime);// Change on ADDForce
         }
@@ -24,8 +29,6 @@ public class AimRocket : IProjectileMover
     }
     private GameObject GetTarget(GameObject projectile, DataOfProjectile dataOfProjectile)
     {
-        
-
         List<GameObject> targets = dataOfProjectile.OwnersShip.GetComponent<IGetListOfEnemy>().GetEnemyOfThisShip();
         float currentMinDistance = Vector3.Distance(projectile.transform.position, targets[0].transform.position);
         int indexOfNearestTarget = 0;

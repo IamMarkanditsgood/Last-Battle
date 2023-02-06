@@ -6,8 +6,8 @@ public class SpawnOfProjectiles : AFirstSpawn
 {
     public override void FirstSpawn()
     {
-        StartSetings startSetings = StartSetings.instance;
-        for (int i = 0; i < startSetings.NumberOfProjectile; i++)
+        LevelData levelData = LevelData.instance;
+        for (int i = 0; i < levelData.NumberOfProjectile; i++)
         {
             CreateNewProjectile(PrefabsStorey.instance.Projectile);
         }

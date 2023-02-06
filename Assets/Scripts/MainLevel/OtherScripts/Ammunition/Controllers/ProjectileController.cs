@@ -9,9 +9,8 @@ public class ProjectileController : MonoBehaviour
     private LifeTimer _lifeTimer = new LifeTimer();
     private DataOfProjectile _dataOfProjectile;
     private Coroutine _coroutine;
-    private void Start()
+    private void Awake()
     {
-        _projectileMover = GetMoverScript();
         _dataOfProjectile = GetComponent<DataOfProjectile>();
 
     }
@@ -25,16 +24,19 @@ public class ProjectileController : MonoBehaviour
     }
     private void OnEnable()
     {
-        _projectileMover = GetMoverScript();
+       
         if (GetComponent<DataOfProjectile>().ScriptableObjects != null)
         {
-
+            
+            _projectileMover = GetMoverScript();
             float _timeLife = GetComponent<DataOfProjectile>().ScriptableObjects.LifeTime;
             _coroutine = StartCoroutine(_lifeTimer.WaitDeath(_timeLife, gameObject));
         }
     }
     private void OnDisable()
     {
+        CleanPrefab clean = new CleanPrefab();
+        clean.CleanProjectile(gameObject);
         if (_coroutine != null)
         {
             StopCoroutine(_coroutine);

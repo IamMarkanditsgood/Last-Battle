@@ -13,6 +13,7 @@ namespace Controllers
 
         private LevelData _levelData;
         private ObjectsComposition _objectsComposition;
+        private Sight sight;
         private InputKeyboardController _keyboardController = new InputKeyboardController();
         private InputMouseController _mouseController = new InputMouseController();
         private LookAtTheSight _lookAt = new LookAtTheSight();
@@ -29,6 +30,9 @@ namespace Controllers
         private void Start()
         {
             _levelData = LevelData.instance;
+
+            sight = new Sight();
+
             _playerShip = gameObject;
             _playerData = GetComponent<PlayerData>();
             _playerData.Rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationX;
@@ -38,7 +42,7 @@ namespace Controllers
 
             _lookAt.LookAtCursor(_playerData, _playerShip);
             _mouseController.InputController(_playerData);
-            _uiLevelController.SetHPAndShield(_levelData.MainDatas.MainLevelUI, _playerData.GetHealth(), _playerData.GetShield());
+            _uiLevelController.SetHPAndShield(_levelData.MainUIDatas.MainLevelUI, _playerData.GetHealth(), _playerData.GetShield());
             if (!_healtheAndShieldController.CheckHealtheAndShield(_playerData.GetHealth()/*, _playerData.Shield, gameObject, true*/) && _isLive)
             {
                 gameObject.GetComponent<MeshRenderer>().enabled = false;
@@ -78,6 +82,10 @@ namespace Controllers
                 effectController.StopEngineEffect(_curentEngineEffect);
                 _engineSwithcer = true;
             }
+        }
+        private void LateUpdate()
+        {
+            sight.CheckMovementOfSight(_playerData.Sight);
         }
         private void Death()
         {

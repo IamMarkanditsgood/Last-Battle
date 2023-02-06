@@ -35,12 +35,12 @@ public class TouchingObjects
             }
             else if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
-                CleanPrefab cleanPrefab = new CleanPrefab();
+                //CleanPrefab cleanPrefab = new CleanPrefab();
                 
                 float damage = dataOfProjectile.Damage * dataOfProjectile.DamageIndex;
                 HealtheAndShieldController healtheAndShieldController = new HealtheAndShieldController();
                 healtheAndShieldController.TakeDamage(collision.gameObject, damage, true);
-                cleanPrefab.CleanProjectile(bullet);
+                //cleanPrefab.CleanProjectile(bullet);
                 bullet.SetActive(false);
                 effectController.UseExplosionEffect(dataOfProjectile.ScriptableObjects.TypeOfEffect, bullet.transform);
                 soundsController.UseExplosionSound(dataOfProjectile.ScriptableObjects.TypeOfSound, bullet);

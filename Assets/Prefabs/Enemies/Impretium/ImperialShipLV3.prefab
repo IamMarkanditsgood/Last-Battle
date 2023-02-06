@@ -1394,6 +1394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 0
   _typeOfAIbrain: 1
   _player: {fileID: 0}
   _positionBehindShip: {fileID: 7555159491947584127}
@@ -1597,6 +1598,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5348051170971536009}
     m_Modifications:
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 5348051170434483993}
     - target: {fileID: 7793914248567742924, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
       propertyPath: m_Name
       value: RocketGun
@@ -1676,6 +1681,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5348051170971536009}
     m_Modifications:
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 5348051170434483993}
     - target: {fileID: 7793914248567742924, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
       propertyPath: m_Name
       value: RocketGun (1)

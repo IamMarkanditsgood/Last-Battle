@@ -8,6 +8,7 @@ public class DataOfProjectile : MonoBehaviour
     [SerializeField] private AmmunitionData scriptableObjects;
     private GameObject _currentParticles;
     private GameObject _ownersShip;
+    [SerializeField] private GameObject _currentTurget;
     private float _damageIndex = 1;
     private float _damage;
     private float _speedIndex = 1;
@@ -42,5 +43,10 @@ public class DataOfProjectile : MonoBehaviour
     {
         get { return _ownersShip; }
         set { _ownersShip = value; }
+    }
+    public GameObject CurrentTarget
+    {
+        get { return _currentTurget; }
+        set { _currentTurget = value; }
     }
 }

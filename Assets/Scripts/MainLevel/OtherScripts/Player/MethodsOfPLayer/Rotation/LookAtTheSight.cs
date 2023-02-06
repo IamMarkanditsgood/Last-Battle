@@ -7,7 +7,7 @@ namespace LookAtMethods
     {
         public void LookAtCursor(PlayerData playerData, GameObject playerShip)
         {
-            playerShip.transform.LookAt(playerData.Cursor.transform, Vector3.up);
+            playerShip.transform.LookAt(playerData.Sight.transform, Vector3.up);
         }
     }
 }

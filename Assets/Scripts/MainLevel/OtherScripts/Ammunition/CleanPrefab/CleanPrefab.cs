@@ -9,6 +9,7 @@ public class CleanPrefab
         DataOfProjectile dataOfProjectile = curentBullet.GetComponent<DataOfProjectile>();
         curentBullet.GetComponent<MeshRenderer>().sharedMaterial = null;
         curentBullet.GetComponent<MeshFilter>().mesh = null;
+        dataOfProjectile.CurrentTarget = null;
         Object.Destroy(dataOfProjectile.CurrentParticles);
     }
 }

@@ -2,16 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowForPlayer : MonoBehaviour
+public class FollowForPlayer
 {
-    [SerializeField] private Transform _targetOfFollowing;
-    [SerializeField] private float _speedOfFollowing;
-    [SerializeField] private float _yPosition;
-    
-    void FixedUpdate()
+    public void MoveToObject(GameObject obj,Transform targetOfFollowing, float yPositionForObj, float speedForFollowing)
     {
-        Vector3 position = _targetOfFollowing.position;
-        position.y = _yPosition;
-        transform.position = Vector3.Lerp(transform.position, position, _speedOfFollowing * Time.deltaTime);
+        Vector3 position = targetOfFollowing.position;
+        position.y = yPositionForObj;
+        obj.transform.position = Vector3.Lerp(obj.transform.position, position, speedForFollowing * Time.deltaTime);
     }
 }

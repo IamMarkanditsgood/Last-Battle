@@ -10,7 +10,7 @@ namespace ShipData
         public static PlayerData instance;
 
 
-        [SerializeField] private GameObject _cursor;
+        [SerializeField] private GameObject _sight;
         [SerializeField] private List<Transform> _positionAroundPlayer;
         [SerializeField] private List<GameObject> _guns;
         [SerializeField] private List<GameObject> _abilities;
@@ -40,9 +40,9 @@ namespace ShipData
             get { return _positionAroundPlayer; }
         }
 
-        public GameObject Cursor
+        public GameObject Sight
         {
-            get { return _cursor; }
+            get { return _sight; }
         }
         public List<GameObject> TakeListOfGuns()
         {

@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sight : MonoBehaviour
+public class Sight 
 {
-    void LateUpdate()
+    public void CheckMovementOfSight(GameObject sight)
     {
-        Vector3 pointScrin = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-        transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, pointScrin.z));
-        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        Vector3 pointScrin = Camera.main.WorldToScreenPoint(sight.transform.position);
+        sight.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, pointScrin.z));
+        sight.transform.position = new Vector3(sight.transform.position.x, 0, sight.transform.position.z);
     }
 }

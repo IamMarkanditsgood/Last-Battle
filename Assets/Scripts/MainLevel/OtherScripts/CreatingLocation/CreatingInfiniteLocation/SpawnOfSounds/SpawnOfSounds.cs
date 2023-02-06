@@ -41,7 +41,7 @@ public class SpawnOfSounds : AFirstSpawn
                 objectsComposition.PoolSounds.Add(obj);
             }
         }
-        Debug.Log("You have not this type of effects" + eTypeOfSound);
+        Debug.Log("You have not this type of sound" + eTypeOfSound);
 
     }
 }

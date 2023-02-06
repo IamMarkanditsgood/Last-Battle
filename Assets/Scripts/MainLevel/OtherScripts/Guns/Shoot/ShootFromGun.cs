@@ -22,9 +22,9 @@ public class ShootFromGun : MonoBehaviour, IStandardShoot
                 UseShotSound();
                 bullet.transform.position = _dataOfGun.PositionForSooting.position;
                 bullet.transform.rotation = _dataOfGun.PositionForSooting.rotation;
-                bullet.SetActive(true);
                 bullet.GetComponent<DataOfProjectile>().ScriptableObjects = _dataOfGun.Bullet;
                 bullet.layer = gameObject.layer;
+                bullet.SetActive(true);
                 CreateProjectile createProjectile = new CreateProjectile();
                 createProjectile.CreateNewFeatures(_dataOfGun, bullet);
                 _dataOfGun.IsCharged = false;

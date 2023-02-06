@@ -2,33 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShopAreaController : MonoBehaviour
+public class ShopAreaController
 {
     private const float _distanceForUseShop = 5; // Shop area size / 2
-
-    [SerializeField] private MainDatas _mainDatasOfCanvas;
     private float _currentDistance;
-    private LevelData _levelData;
-    
-
-    private void Start()
+    public void CanUseShop(MainDatas mainDatasOfCanvas, GameObject shopArea)
     {
-        _levelData = LevelData.instance;
-    }
+        LevelData _levelData = LevelData.instance;
 
-    private void Update()
-    {
-        if (!_levelData.MainDatas.IsShopOpen)
+        if (!mainDatasOfCanvas.IsShopOpen && _levelData.IsPeacefulTime)
         {
-            _currentDistance = Vector3.Distance(gameObject.transform.position, _levelData.Player.transform.position);
+            _currentDistance = Vector3.Distance(shopArea.transform.position, _levelData.Player.transform.position);
             if (_currentDistance <= _distanceForUseShop)
             {
-                _mainDatasOfCanvas.MainLevelUI.ShopButton.SetActive(true);
+                mainDatasOfCanvas.MainLevelUI.ShopButton.SetActive(true);
             }
             else
             {
-                _mainDatasOfCanvas.MainLevelUI.ShopButton.SetActive(false);
+                mainDatasOfCanvas.MainLevelUI.ShopButton.SetActive(false);
             }
         }
+
     }
 }
