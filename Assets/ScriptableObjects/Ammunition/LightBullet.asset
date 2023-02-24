@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: LightBullet
   m_EditorClassIdentifier: 
   _typeOfProjectile: 1
+  _typeOfEffect: 19
+  _typeOfSound: 16
   _material: {fileID: 0}
   _mesh: {fileID: 0}
   _speed: 15

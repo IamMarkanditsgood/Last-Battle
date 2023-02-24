@@ -218,22 +218,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 0
   _typeOfAIbrain: 1
-  _player: {fileID: 0}
-  _positionBehindShip: {fileID: 5775067592337523170}
+  _scriptableObject: {fileID: 11400000, guid: 39884d57af43702489ac3b2224d8c8e5, type: 2}
+  _layerMaskOfEnemy:
+    serializedVersion: 2
+    m_Bits: 256
   _listOfGun:
   - {fileID: 3023978636005203493}
   - {fileID: 971490762947970210}
-  _scriptableObject: {fileID: 11400000, guid: 39884d57af43702489ac3b2224d8c8e5, type: 2}
+  _player: {fileID: 0}
+  _positionBehindShip: {fileID: 5775067592337523170}
   _distanceForShooting: 60
   _healthe: 0
   _shield: 0
   _healtheIndex: 1
   _shieldIndex: 1
   _distanceForUsingAiAlgor: 60
-  _layerMaskOfEnemy:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &3260344001158855576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +285,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3987269503506417354}
     m_Modifications:
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _damage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 4932652611779987181}
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _recharge
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _firstDamage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3451360134945846723, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -351,6 +372,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3987269503506417354}
     m_Modifications:
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _damage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 4932652611779987181}
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _recharge
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _firstDamage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 252190291536913669, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3451360134945846723, guid: 8ed82f288ab952d42ab8d7690e599cb2, type: 3}
       propertyPath: m_RootOrder
       value: 0

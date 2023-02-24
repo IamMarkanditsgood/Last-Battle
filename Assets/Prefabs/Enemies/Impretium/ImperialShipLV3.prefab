@@ -1394,22 +1394,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 0
   _typeOfAIbrain: 1
-  _player: {fileID: 0}
-  _positionBehindShip: {fileID: 7555159491947584127}
+  _scriptableObject: {fileID: 11400000, guid: 11fa0fbcb988de5499b29bac1c33502a, type: 2}
+  _layerMaskOfEnemy:
+    serializedVersion: 2
+    m_Bits: 256
   _listOfGun:
   - {fileID: 356024270429245083}
   - {fileID: 356024272382570490}
-  _scriptableObject: {fileID: 11400000, guid: 11fa0fbcb988de5499b29bac1c33502a, type: 2}
+  _player: {fileID: 0}
+  _positionBehindShip: {fileID: 7555159491947584127}
   _distanceForShooting: 60
   _healthe: 0
   _shield: 0
   _healtheIndex: 1
   _shieldIndex: 1
   _distanceForUsingAiAlgor: 60
-  _layerMaskOfEnemy:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &8724429783391028864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1597,6 +1598,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5348051170971536009}
     m_Modifications:
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 5348051170434483993}
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _recharge
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _firstDamage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7793914248567742924, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
       propertyPath: m_Name
       value: RocketGun
@@ -1676,6 +1693,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5348051170971536009}
     m_Modifications:
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 5348051170434483993}
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _recharge
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _firstDamage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7793914248567742924, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
       propertyPath: m_Name
       value: RocketGun (1)

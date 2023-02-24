@@ -216,21 +216,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 0
   _typeOfAIbrain: 2
-  _player: {fileID: 0}
-  _positionBehindShip: {fileID: 1180197951459998290}
+  _scriptableObject: {fileID: 11400000, guid: 874b2984a82080046b422df6db86c199, type: 2}
+  _layerMaskOfEnemy:
+    serializedVersion: 2
+    m_Bits: 256
   _listOfGun:
   - {fileID: 1959094768097216758}
-  _scriptableObject: {fileID: 11400000, guid: 874b2984a82080046b422df6db86c199, type: 2}
+  _player: {fileID: 0}
+  _positionBehindShip: {fileID: 1180197951459998290}
   _distanceForShooting: 101
   _healthe: 0
   _shield: 0
   _healtheIndex: 1
   _shieldIndex: 1
   _distanceForUsingAiAlgor: 100
-  _layerMaskOfEnemy:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &7319642342998970125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +298,18 @@ PrefabInstance:
     - target: {fileID: 8528267283554753001, guid: baa48bebf7da71c45815683810c8c6cf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528267283554753003, guid: baa48bebf7da71c45815683810c8c6cf, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 8381946640285372258}
+    - target: {fileID: 8528267283554753003, guid: baa48bebf7da71c45815683810c8c6cf, type: 3}
+      propertyPath: _firstDamage
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528267283554753003, guid: baa48bebf7da71c45815683810c8c6cf, type: 3}
+      propertyPath: _firstRechargeTime
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baa48bebf7da71c45815683810c8c6cf, type: 3}

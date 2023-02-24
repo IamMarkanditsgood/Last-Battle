@@ -58,13 +58,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 815cb607be1edfa4cb35a9e941145c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typeOfGun: 10
-  _positionsForShooting: {fileID: 5109558250199883982}
   _bullet: {fileID: 11400000, guid: 14f4bb546e0c3e04bbdd3223b5ce8ab4, type: 2}
+  _typeOfGun: 10
+  _typeOfSound: 3
+  _typeOfShotEffect: 6
+  _gunOwner: {fileID: 0}
+  _positionsForShooting: {fileID: 5109558250199883982}
   _damageIndex: 1
-  _damage: 1
+  _damage: 0
+  _firstDamage: 30
   _timeRechargeIndex: 1
-  _recharge: 0.5
+  _recharge: 0
+  _firstRechargeTime: 1
 --- !u!1 &5109558250199883977
 GameObject:
   m_ObjectHideFlags: 0

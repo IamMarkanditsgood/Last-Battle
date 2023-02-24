@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1a2627d0d812347af4c6da083c4efc, type: 3}
   m_Name: AimRocket
   m_EditorClassIdentifier: 
-  _name: AimRocket
+  _typeOfProjectile: 0
+  _typeOfEffect: 24
+  _typeOfSound: 19
+  _particles: {fileID: 4386856570545377314, guid: 14ce267e895266249b8bdee43e30bb28, type: 3}
   _material: {fileID: 2100000, guid: e494807fe98891c4dba63bd86cc64aea, type: 2}
   _mesh: {fileID: 1836222553264194175, guid: 4ab581e06f3b88042b9154887d4c359e, type: 3}
-  _damage: 20
+  _size: {x: 0.3, y: 0.3, z: 0.3}
   _speed: 10
   _lifeTime: 10
-  _size: {x: 0.3, y: 0.3, z: 0.3}
-  _particles: {fileID: 4386856570545377314, guid: 14ce267e895266249b8bdee43e30bb28, type: 3}
+  _sizeOfCollider: 2

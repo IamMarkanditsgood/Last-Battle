@@ -219,24 +219,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 0
   _typeOfAIbrain: 2
-  _player: {fileID: 0}
-  _positionBehindShip: {fileID: 6623458165299718312}
+  _scriptableObject: {fileID: 11400000, guid: 72d2ca883506051468d6741911a1c239, type: 2}
+  _layerMaskOfEnemy:
+    serializedVersion: 2
+    m_Bits: 256
   _listOfGun:
   - {fileID: 4017997759720647340}
   - {fileID: 4017997761095653749}
   - {fileID: 6931055346165648953}
   - {fileID: 6931055345837782819}
-  _scriptableObject: {fileID: 11400000, guid: 72d2ca883506051468d6741911a1c239, type: 2}
+  _player: {fileID: 0}
+  _positionBehindShip: {fileID: 6623458165299718312}
   _distanceForShooting: 100
   _healthe: 0
   _shield: 0
   _healtheIndex: 1
   _shieldIndex: 1
   _distanceForUsingAiAlgor: 100
-  _layerMaskOfEnemy:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &1285048953750098336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,8 +258,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 8720020903722626198}
     m_Modifications:
     - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 8720020904035715097}
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
       propertyPath: _recharge
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7793914248567742924, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
       propertyPath: m_Name
@@ -399,6 +404,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 8720020904035715097}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
 --- !u!1 &6931055346165648953 stripped
@@ -478,6 +487,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 8720020904035715097}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
 --- !u!1 &6931055345837782819 stripped
@@ -498,8 +511,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 8720020903722626198}
     m_Modifications:
     - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 8720020904035715097}
+    - target: {fileID: 7793914248567742921, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
       propertyPath: _recharge
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7793914248567742924, guid: 9c1d6cfae6257a943a33b5ed351388aa, type: 3}
       propertyPath: m_Name

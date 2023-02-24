@@ -60,12 +60,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _typeOfGun: 10
+  _typeOfSound: 5
   _positionsForShooting: {fileID: 2764986104407830591}
   _bullet: {fileID: 11400000, guid: 14f4bb546e0c3e04bbdd3223b5ce8ab4, type: 2}
+  _particleObjects: []
   _damageIndex: 1
   _damage: 1
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 0.5
+  _firstRechargeTime: 0
 --- !u!1 &2764986103072647275
 GameObject:
   m_ObjectHideFlags: 0

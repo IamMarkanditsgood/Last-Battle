@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeOfEnemy: 3
   _raceOfShip: 1
-  _health: 100
-  _shield: 100
+  _health: 150
+  _shield: 150

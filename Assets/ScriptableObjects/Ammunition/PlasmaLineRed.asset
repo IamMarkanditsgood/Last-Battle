@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: PlasmaLineRed
   m_EditorClassIdentifier: 
   _typeOfProjectile: 1
+  _typeOfEffect: 21
+  _typeOfSound: 17
+  _particles: {fileID: 1583075891417801013, guid: 1f4f788f475d73a4c962cd37c591c272, type: 3}
   _material: {fileID: 0}
   _mesh: {fileID: 0}
-  _damage: 10
-  _speed: 10
-  _lifeTime: 10
   _size: {x: 0.2, y: 0.2, z: 0.2}
-  _particles: {fileID: 1583075891417801013, guid: 1f4f788f475d73a4c962cd37c591c272, type: 3}
+  _speed: 20
+  _lifeTime: 10
+  _sizeOfCollider: 0.5

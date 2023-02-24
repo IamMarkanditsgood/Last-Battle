@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: BasicRocket
   m_EditorClassIdentifier: 
   _typeOfProjectile: 2
+  _typeOfEffect: 24
+  _typeOfSound: 19
+  _particles: {fileID: 7338916534628047903, guid: 1c3d6fa22c947eb40858d1023c577a4b, type: 3}
   _material: {fileID: 2100000, guid: e494807fe98891c4dba63bd86cc64aea, type: 2}
   _mesh: {fileID: 1836222553264194175, guid: 4ab581e06f3b88042b9154887d4c359e, type: 3}
-  _damage: 10
-  _speed: 20
-  _lifeTime: 10
   _size: {x: 0.3, y: 0.3, z: 0.3}
-  _particles: {fileID: 7338916534628047903, guid: 1c3d6fa22c947eb40858d1023c577a4b, type: 3}
+  _speed: 10
+  _lifeTime: 10
+  _sizeOfCollider: 4

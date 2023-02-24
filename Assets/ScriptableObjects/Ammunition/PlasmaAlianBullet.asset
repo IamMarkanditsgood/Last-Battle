@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: PlasmaAlianBullet
   m_EditorClassIdentifier: 
   _typeOfProjectile: 1
+  _typeOfEffect: 22
+  _typeOfSound: 17
+  _particles: {fileID: 9209676177981960978, guid: 792d4bf8e26f8334cbd30e919bd9ad12, type: 3}
   _material: {fileID: 0}
   _mesh: {fileID: 0}
-  _damage: 10
-  _speed: 30
-  _lifeTime: 10
   _size: {x: 1, y: 1, z: 1}
-  _particles: {fileID: 9209676177981960978, guid: 792d4bf8e26f8334cbd30e919bd9ad12, type: 3}
+  _speed: 25
+  _lifeTime: 10
+  _sizeOfCollider: 0.1

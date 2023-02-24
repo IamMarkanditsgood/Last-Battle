@@ -131,12 +131,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _typeOfGun: 6
+  _typeOfSound: 6
+  _typeOfShotEffect: 0
   _positionsForShooting: {fileID: 2529252782802836362}
   _bullet: {fileID: 11400000, guid: 8d676f66d347b3e409020f4a80dffbd0, type: 2}
   _damageIndex: 1
   _damage: 10
+  _firstDamage: 0
   _timeRechargeIndex: 1
   _recharge: 1
+  _firstRechargeTime: 0
 --- !u!114 &5454598728489820836
 MonoBehaviour:
   m_ObjectHideFlags: 0

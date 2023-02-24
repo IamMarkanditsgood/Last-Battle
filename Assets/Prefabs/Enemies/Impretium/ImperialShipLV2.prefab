@@ -998,22 +998,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d34002df007064d8321f5527e5fb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _raceOfShip: 0
   _typeOfAIbrain: 0
-  _player: {fileID: 0}
-  _positionBehindShip: {fileID: 2097250972073921100}
+  _scriptableObject: {fileID: 11400000, guid: 6e0254ebbc5d58d4fa916daedd47399f, type: 2}
+  _layerMaskOfEnemy:
+    serializedVersion: 2
+    m_Bits: 256
   _listOfGun:
   - {fileID: 2792689867059372572}
   - {fileID: 1044556155414746454}
-  _scriptableObject: {fileID: 11400000, guid: 6e0254ebbc5d58d4fa916daedd47399f, type: 2}
+  _player: {fileID: 0}
+  _positionBehindShip: {fileID: 2097250972073921100}
   _distanceForShooting: 60
   _healthe: 0
   _shield: 0
   _healtheIndex: 1
   _shieldIndex: 1
   _distanceForUsingAiAlgor: 60
-  _layerMaskOfEnemy:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &8317503563457871609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,7 +1126,27 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _bullet
+      value: 
+      objectReference: {fileID: 11400000, guid: 67e7c0c7aee6df84b8cfbb274f06d11a, type: 2}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
       propertyPath: _damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 5460821173451600208}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _recharge
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _damageIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _firstDamage
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
@@ -1204,7 +1225,27 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _bullet
+      value: 
+      objectReference: {fileID: 11400000, guid: 67e7c0c7aee6df84b8cfbb274f06d11a, type: 2}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
       propertyPath: _damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _gunOwner
+      value: 
+      objectReference: {fileID: 5460821173451600208}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _recharge
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _damageIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
+      propertyPath: _firstDamage
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4313126859614287849, guid: a60e5e40b9dfc8a4cb8ceb67714035f1, type: 3}
