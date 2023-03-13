@@ -110,6 +110,8 @@ MonoBehaviour:
   _timeRechargeIndex: 1
   _recharge: 0
   _firstRechargeTime: 1
+  _minTimeOfRecharge: 0.1
+  _maxDamage: 500
 --- !u!114 &7793914248567742926
 MonoBehaviour:
   m_ObjectHideFlags: 0

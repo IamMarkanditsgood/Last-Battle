@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class DataOfMenu : MonoBehaviour
 {
-    private void Start()
+    [SerializeField] private GameObject _buttonSound;
+    [SerializeField] private GameObject _settingsPanel;
+
+    public GameObject ButtonSound
     {
-        
+        get { return _buttonSound; }
     }
-    private void Update()
-    {
-        
+    public GameObject SettingPanel 
+    { 
+        get { return _settingsPanel; } 
     }
 }

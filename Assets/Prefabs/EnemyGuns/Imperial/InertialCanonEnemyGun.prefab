@@ -153,3 +153,5 @@ MonoBehaviour:
   _timeRechargeIndex: 1
   _recharge: 0
   _firstRechargeTime: 2
+  _minTimeOfRecharge: 0.5
+  _maxDamage: 500

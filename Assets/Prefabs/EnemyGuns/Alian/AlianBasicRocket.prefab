@@ -70,6 +70,8 @@ MonoBehaviour:
   _timeRechargeIndex: 1
   _recharge: 0
   _firstRechargeTime: 1
+  _minTimeOfRecharge: 0.1
+  _maxDamage: 500
 --- !u!1 &5109558250199883977
 GameObject:
   m_ObjectHideFlags: 0
