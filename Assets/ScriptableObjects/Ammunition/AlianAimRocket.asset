@@ -15,10 +15,10 @@ MonoBehaviour:
   _typeOfProjectile: 0
   _typeOfEffect: 16
   _typeOfSound: 20
+  _particles: {fileID: 7442183130224065834, guid: 71e0a0bf92536d247880585dbedfbb8e, type: 3}
   _material: {fileID: 0}
   _mesh: {fileID: 0}
-  _speed: 20
+  _size: {x: 0.1, y: 0.1, z: 0.1}
+  _speed: 10
   _lifeTime: 10
   _sizeOfCollider: 2
-  _size: {x: 0.1, y: 0.1, z: 0.1}
-  _particles: {fileID: 7442183130224065834, guid: 71e0a0bf92536d247880585dbedfbb8e, type: 3}
